@@ -3,6 +3,7 @@ const ftSymbol = Symbol();
 const argRegExp = /\$\{\s*([^\}]*)\s*\}/;
 const argPlaceholder = '${}';
 
+/* Ceci un commentaire */
 function assemble(strings, args) {
     const maxArgs = Math.min(args.length, strings.length - 1);
     const result = new Array(strings.length + maxArgs);
@@ -14,6 +15,7 @@ function assemble(strings, args) {
     return result.join('');
 }
 
+/* Ceci est un autre commentaire */
 function addFormatter(name, formatter) {
     if (name && formatter) {
         if (typeof formatter.format === 'function') {
