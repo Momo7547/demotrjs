@@ -12,7 +12,7 @@ function assemble(strings, args) {
         result[(i * 2) + 1] = args[i];
     }
     result[result.length - 1] = strings[strings.length - 1];
-    return result.join('');
+    return result.join('-');
 }
 
 /* Ceci est un autre commentaire */
