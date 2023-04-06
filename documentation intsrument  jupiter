@@ -1,0 +1,2781 @@
+ARTURIA – JUPITER-8V – USER’S MANUAL 1
+USER’S MANUAL
+2.5
+2 ARTURIA – JUPITER-8V – USER’S MANUAL
+PROGRAMMING:
+Nicolas Bronnec
+Fabrice Bourgeois
+ Gavin Burke
+ Vincent Travaglini
+ Jean–Michel Blanchet
+Philippe Wicker
+Cristian Kreindler
+Damien Vanderbeyvanghe
+Thomas Diligent
+Robert Bocquier
+MANUAL:
+Thomas Diligent (English version)
+Christiaan de Jong (English version)
+Houston Haynes (English version)
+Richard Phan (English version)
+Jean-Michel Blanchet (French version)
+Antoine Back (French version)
+Kenta Sasano (Version japonaise)
+Kiriko Ishida (Version japonaise)
+Tomoya Fukushi (Version japonaise)
+DESIGN:
+ Yannick Bonnefoy (Beautifulscreen)
+ Elisa Noual
+SOUND DESIGN:
+ Jean–Michel Blanchet
+ Thomas Binek (Tasmodia)
+Stephan Muësh (Rsmus7)
+Celmar Engel
+ Ruff & Jam
+Katsunori Ujiie
+Sato Fujimori
+Richard James
+Nori Ubutaka
+© ARTURIA SA – 1999-2010 – All rights reserved.
+4, Chemin de Malacher
+38240 Meylan
+FRANCE
+http://www.arturia.com
+Information contained in this manual is subject to change without notice and does not represent a commitment
+on the part of Arturia. The software described in this manual is provided under the terms of a license
+agreement or non-disclosure agreement. The software license agreement specifies the terms and conditions for
+its lawful use. No part of this manual may be produced or transmitted in any form or by any purpose other than
+purchaser’s personal use, without the express written permission of ARTURIA S.A.
+The mark “Jupiter-8V” and “Roland” are property of Roland Corporation. The Jupiter-8 interface is also owned
+by Roland Corporation, the design and model being registered trademarks. All other products, logos or
+company names quoted in this manual are trademarks or registered trademarks of their respective owners.
+ARTURIA – JUPITER-8V – USER’S MANUAL 3
+Thank you for purchasing the ARTURIA Jupiter-8V 2.5!
+In this package you will find:
+• This paper manual for the Jupiter-8V 2.5
+• One CD-ROM containing the Jupiter-8V 2.5 installer for MAC OSX and Windows
+XP/Vista/7
+• The registration Card
+Carefully store your card!
+In order to be able to use the software, you have to register your product. By registering,
+you identify yourself as the legitimate owner and will be sure to receive the latest news
+and updates for your product. After registration, you will receive a user ID and password
+in order to access a protected area on our site. It also puts you on our user notification
+list, so that you can be the first to know when there are updates or new product offers.
+4 ARTURIA – JUPITER-8V – USER’S MANUAL
+New features in Jupiter-8V 2.5
+Features
+• MIDI Control Assignment Improvement
+• V Series standalone
+Bug fixes
+• Sluggish GUI on Mac OS X 10.5 (Leopard)
+• Effect GUI update (was showing wrong settings)
+• Fixed crash with arpeggio
+• Fixed crash with Sound Map
+• Unison improvement
+• Fixed issues with modulation wheel
+Platform requirements
+• Added support for 64-bit VST and Audio Unit
+• Added support for Pro Tools 9 & 10
+• Added support for Mac OS X 10.7 (Lion)
+• Dropped support for PowerPC computers
+• Dropped support for Mac OS X 10.4
+New features in Jupiter-8V 2.0
+If you already own Jupiter-8V, version 2 includes the following changes:
+• “Sound Map” graphical preset browser added
+• RPN “pitch bend range” message is now recognized
+• NRPN midi controls can be used for automation
+• Increase of overall volume
+• Switched to eLicenser Protection
+• Fixed issue related to modulation wheel in Pro Tools (MAC OSX)
+• Fixed issue related to triangle signal amplitude
+• Miscellaneous fixed issues
+ARTURIA – JUPITER-8V – USER’S MANUAL 5
+Table of contents
+1 INTRODUCTION 8
+1.1 Roland/Jupiter-8 Story 8
+1.2 TAE® 12
+1.2.1 Aliasing-free oscillators 12
+1.2.2 A better reproduction of analog oscillator waveforms 12
+1.2.3 Direct Filter Circuit Modeling 14
+2 INSTALLATION 15
+2.1 Notes about software protection and the installation 15
+2.2 Windows Installation 15
+2.3 Mac OS X Installation 18
+3 AUTHORIZATION 20
+4 QUICK START 26
+4.1 Structure of the Jupiter-8V 2.5 26
+4.2 Using the presets 27
+4.2.1 Selecting the presets 27
+4.2.2 Editing the presets 29
+4.3 The 4 main parts of the Jupiter-8V 30
+4.4 Overview of the Jupiter-8V user interface 31
+4.5 The (Advanced) Modulations section 33
+4.5.1 Creating a melodic sequence with the SEQUENCER 34
+4.5.2 Create progressive modulations with the GALAXY unit 36
+4.5.3 Control parameters with the Keyboard unit 38
+4.6 The Effects 39
+4.7 The “Patch” section of the effects 41
+4.7.1 The chorus 41
+4.7.2 The delay 42
+4.8 Realtime controllers and MIDI assign 43
+5 A UNIQUE SYNTHESIZER, WHY ? 45
+5.1 The Roland Jupiter-8 45
+5.2 The Arturia Jupiter-8V 2.5 45
+6 THE INTERFACE 47
+6.1 Tool bar 47
+6.2 Using the presets 48
+6.2.1 The types of presets 48
+6.2.2 Selection of a preset PATCH or PROGRAM 48
+6.2.3 Creating a new preset 51
+6.2.4 Save a user preset 51
+6.2.5 Save a user preset using the “Save as” option 51
+6.2.6 Delete a preset 52
+6.2.7 Import / Export a preset bank 52
+6.3 Using the controllers 53
+6.3.1 Knobs 53
+6.3.2 Buttons 54
+6.3.3 Switches 54
+6.3.4 Pitch Bend wheel 54
+6 ARTURIA – JUPITER-8V – USER’S MANUAL
+6.3.5 Modulation button 55
+6.3.6 Virtual keyboard 55
+6.3.7 LCD Screen 55
+6.3.8 MIDI Control 56
+6.3.9 The preference screen 59
+6.4 The Sound Map 60
+6.4.1 The MAP main interface 61
+6.4.2 The Sound Map overview 62
+6.4.3 The LIST preset manager 65
+6.4.4 The COMPASS morphing interface 66
+7 THE DIFFERENT MODULES 68
+7.1 The original Jupiter-8 68
+7.1.1 The oscillators (“VCO 1 and 2”) 69
+7.1.2 The mixer (“VCO1 / VCO2”) 71
+7.1.3 The filter (“VCF”) 71
+7.1.4 The Amplifier (“VCA”) 73
+7.1.5 The ADSR Envelopes 74
+7.1.6 The LFO 75
+7.1.7 The VCO modulator 75
+7.1.8 The LFO MODULATION, PORTAMENTO and BEND section 76
+7.1.9 The pitch bend wheel and LFO MOD button 77
+7.1.10 The Master Tune section 77
+7.1.11 The arpeggiator (“ARPEGGIO”) 78
+7.1.12 The keyboard assign section (“ASSIGN MODE”) 78
+7.1.13 The play modes selection (“KEY MODE”) 79
+7.2 Step Sequencer 80
+7.2.1 The transport 80
+7.2.2 Edit the sequence 81
+7.2.3 Outputs 82
+7.3 Galaxy 83
+7.4 Voice Effects 84
+7.4.1 Chorus /Flanger 84
+7.4.2 Distortion 85
+7.4.3 Parametric EQ 86
+7.4.4 Phaser 87
+7.4.5 Ring Mod 88
+7.5 Patch Effects 89
+7.5.1 Chorus/Flanger 89
+7.5.2 Stereo Analog Delay 90
+7.5.3 Reverb 91
+7.5.4 Dual Phaser 91
+8 THE BASICS OF SUBTRACTIVE SYNTHESIS 93
+8.1 The main elements 93
+8.1.1 The Oscillator or VCO 93
+8.1.2 The Mixer 97
+8.1.3 The filter or VCF 97
+8.1.4 The amplifier or VCA 100
+8.2 Other modules 100
+8.2.1 The keyboard 100
+8.2.2 The envelope generator or ADSR 101
+8.2.3 The low frequency oscillator 102
+8.3 Modules of the Jupiter-8V 2.5 103
+9 SOME ELEMENTS OF SOUND DESIGN 104
+9.1 A polyphonic violin preset made with the Jupiter- 8 V 2.5 104
+ARTURIA – JUPITER-8V – USER’S MANUAL 7
+9.2 Arpeggiated sounds 107
+9.3 A sequence with the Jupiter-8V 2.5 111
+10 MODES OF OPERATION 115
+10.1 Stand-alone 115
+10.1.1 Launching the Stand-alone application 115
+10.1.2 Preference Configuration 115
+10.2 Using a VST and Audio Unit instrument in Ableton Live 116
+10.3 RTAS - Pro Tools 117
+10.3.1 Utilization of the plug-in 117
+10.3.2 Connection to a MIDI channel 118
+10.3.3 Saving the presets 119
+10.3.4 Automation under Pro Tools 119
+10.4 Cubase VST 120
+10.4.1 Instrument use in VST mode 120
+10.4.2 Rescan the plug-ins directory in Cubase 120
+10.4.3 Connection to a MIDI track 121
+10.4.4 Saving of presets 121
+10.5 Logic & Audio Unit (Max OSX only) 121
+10.5.1 Use in Logic Audio 121
+10.6 Sonar VST (Windows only) 123
+10.6.1 Opening the instrument (Sonar) 123
+10.6.2 Connection to a MIDI track 123
+10.6.3 Save the presets 124
+10.6.4 Automation 124
+10.7 Use in Digital Performer 124
+8 ARTURIA – JUPITER-8V – USER’S MANUAL
+1 INTRODUCTION
+1.1 ROLAND/JUPITER-8 STORY
+The history of Roland is intimately tied to the personal story of its founder, Mr Ikutaro
+Kakehashi.
+When he was just 16 years old, the young Mr Kakehashi noticed there was no watch or
+clock industry in post-war Japan. He therefore understood there was a thriving business
+to develop repairing existing timepieces.1
+Mr Kakehashi found a part-time job in a watch repair store, but he quickly felt frustrated
+with the pace at which things were progressing. In the traditional Japanese organization
+of work, becoming a master in any technical area would take a seven-year
+apprenticeship. Consequently he left after a few months, bought a book on how to repair
+watches and set up the “Kakehashi Watch Shop”.
+This first venture happened to be so successful that he quickly decided to expand and
+turn his enthusiasm for music into business. It became legal at that time to have a shortwave radio and to listen to foreign broadcasts. While he scanned the airwaves for new
+music, Mr Kakehashi learned the basics of how radios operated. He then used broken
+sets to create working units. His repair shop started to repair broken radios in addition to
+clocks and watches.
+
+1 It is remarkable that a man named Mr Torakusu Yamaha had also started out as a watch repairer. In fact the
+same is true of Matthias Hohner, the founder of Hohner. Even the Hammond Organ Company started out as a
+sub-division of the Hammond Clock Company.
+ARTURIA – JUPITER-8V – USER’S MANUAL 9
+In 1954 Mr Kakehashi opened an electrical goods and repair shop by the name of
+“Kakehashi Musen”. - Later the name was to be changed to Ace Electrical Company. His
+initial goal was to produce an electronic instrument capable of generating simple
+monophonic melodies, and so he ended up building a Theremin. Looking for a new
+challenge, he later built a four-octave organ using parts from a reed organ, bits of
+telephones, and simple transistor oscillators. In 1959, he designed and built a Hawaiian
+guitar amplifier, but he also went on with his further organ developments.
+On the 18th of April 1972, Mr. Kakehashi established the Roland Corporation.
+The first synthesizer from Roland was also Japan's first synthesizer. The SH1000 came to
+the market in 1973, just before the Korg 700 did. It was a remarkable instrument,
+offering 10 preset tones selectable from colored tabs. You could add vibrato, growl and
+portamento to modify the sound.
+The System 100, launched in 1975, is another Roland monosynth that would become
+sought-after long after production stopped. The System 100 consisted of five semimodular products. These were the 101 Synthesizer, the 102 Expander, the 103 Mixer
+(including a simple reverb), the 104 Sequencer, and the 109 Monitor Speakers. These
+units fit together to produce a system that sounded really interesting.
+The first results from 1976's expansion in the development team, led to an explosion in
+Roland's product range. There were more synthesizers, a piano, more speaker systems
+and some now-classic instruments that included the Jupiter-4 Compuphonic polysynth.
+The Jupiter-4 was the company's first true polysynth. It used Roland's trademark chorus
+and three Unison options that made it a powerful monosynth. There also was an
+excellent arpeggiator.
+10 ARTURIA – JUPITER-8V – USER’S MANUAL
+By the end of the 1970s, Roland established itself as a major manufacturer, and in 1981
+Mr. Ikutaro Kakehashi opened four new companies in three months. Roland UK, Roland
+GmbH and Musitronic AG in Switzerland. He also established a new Japanese division
+called AMDEK (Analogue Music Digital Electronics Kits)
+Back to the early 80’s, the Prophet 5 and Oberheim OB series dominated the polyphonic
+synthesizer market. Having that in mind the Jupiter-8’s success, initiated in 1981, took
+every one by storm.
+But what made the Jupiter-8 so successful? Well, in terms of sonic possibilities, it
+complemented its competition by bringing something different. The Jupiter-8 was capable
+of creating very versatile sounds. You could easily make “fat” or “crystal” sounds with it.
+In fact, the Jupiter-8 sounded the way it looked, ‘sleek and polished’. Offering oscillator
+sync, cross modulation, a switchable 12dB/24dB filter and polyphonic portamento, the
+sound design opportunities were endless. You could easily save and load patches via its
+cassette interface. Even a superb arpeggiator was included. And last but not least, the
+Jupiter 8 was more reliable than its competition, and the sound was more consistent
+from model to model. Therefore it was very attractive for stage and studio use. In 1982,
+Roland released an upgraded Jupiter-8, the JP8A. It upgraded the Jupiter-8 with a
+number of enhancements including an improved DAC with a higher resolution of the
+auto-tuning system from 12- to 14-bit, plus a brighter LED screen. The Jupiter-8 has
+become one of the most revered of all synthesizers.
+The electro-pop community became quickly convinced by the qualities of the Jupiter-8.
+“Relax” by Frankie Goes to Hollywood was produced incorporating a Jupiter 8, and
+players such Vince Clarke, Howard Jones, John Foxx, and Martyn Ware were also using it.
+The path to classic status of the Jupiter started there.
+Other artists that have used The Jupiter-8 include: Tangerine Dream, Underworld, Jean
+Michel Jarre, Depeche Mode, Prince, Gary Wright, Adrian Lee, Heaven 17, Kitaro, Elvis
+ARTURIA – JUPITER-8V – USER’S MANUAL 11
+Costello, Tears for Fears, Huey Lewis and the News, Journey, Moog Cookbook, Yes, Devo,
+Freddy Fresh, Simple Minds, Jan Hammer, and BT.
+In the early 80’s Roland and Sequential Circuits combined forces to create the MIDI
+protocol. The technology was derived from Roland’s earlier DCB bus Format. MIDI is still
+being used today with great success. In 1982, Roland launched the Jupiter-6, the first
+synthesizer including the MIDI protocol on board. This new synthesizer was introduced as
+an enhancement of the Jupiter-8.
+In 1982 Roland also released the TB303 Bass line. Initially marketed as a “computerised
+bass machine”, the little silver box and its companion, the TR606 “Drumatix”, were
+intended for use as replacements for a bass guitarist and a drummer. The TB303 had a
+very characteristic filter, and a built-in sequencer.
+In 1984 there was the introduction of three synthesizers: the Juno 106, the JX8P and the
+JX10P. The last one was the replacement for the Jupiter-8. Unfortunately, the JX10 was
+never destined for the same success as the Jupiter 8.
+12 ARTURIA – JUPITER-8V – USER’S MANUAL
+It was the introduction of COSM and the “V” products in 1995 that set the future
+direction for Roland. Mr. Kakehashi and his teams had recognized that digital signal
+processing and physical modeling were the future of the electronic audio industry. Roland
+applied these technologies to a broad range of products. From sound modules and danceoriented groove boxes to their most expensive digital mixers and audio workstations,
+Roland remains at the forefront of synthesizers and electronic music.
+1.2 TAE®
+TAE® - True Analog Emulation - is Arturia's outstanding technology dedicated to the
+digital reproduction of analog circuits used in classic analog synthesizers.
+The Jupiter-8V benefits from an enhanced version of TAE®, optimizing CPU allocation
+and memory usage, while being even more accurate than in previous products.
+When implemented in software code, TAE®’s algorithms guarantee authentic emulation
+of hardware specifications. This is why the Jupiter-8V 2.5, and all of Arturia’s virtual
+synthesizers, offer an unparalleled quality of sound.
+TAE® combines four major advances in the domain of synthesis:
+1.2.1 Aliasing-free oscillators
+Standard digital synthesizers produce aliasing in high frequencies, and also when using
+Pulse Width Modulation or FM.
+TAE® allows the production of totally aliasing-free oscillators in all contexts (PWM, FM…),
+and at no extra CPU cost.
+Linear frequency spectrum of the Jupiter-8V oscillator made with TAE
+1.2.2 A better reproduction of analog oscillator waveforms
+The waveforms produced by the oscillators in analog synthesizers are marked by the
+presence of a capacitor in the circuits. The discharge of the capacitor results in a light
+bend in the original waveform (notably for saw tooth, triangular and square waveforms).
+TAE® allows the reproduction of this capacitor discharge. This is the analysis of the
+ARTURIA – JUPITER-8V – USER’S MANUAL 13
+Roland Jupiter 8 waveform, and that of the Jupiter-8V 2.5. They are both equally
+deformed by the low-pass and high-pass filtering.
+Temporal representation of a “saw tooth” waveform of the Jupiter 8
+Temporal representation of a “saw tooth” waveform reproduced by the Jupiter-8V
+14 ARTURIA – JUPITER-8V – USER’S MANUAL
+What’s more, the hardware analog oscillators were unstable. In fact, their waveform
+varies slightly from one period to another. If we add this to the fact that the starting
+point for each period (in Trigger mode) can vary with the temperature and other
+environmental conditions, we find another one of the characteristics that contributed to
+the typical sound of vintage synthesizers.
+TAE® reproduces the instability of oscillators, bringing a fatter and “bigger” sound.
+1.2.3 Direct Filter Circuit Modeling
+Due to advances in computer processing power, the Jupiter-8V can now employ direct
+filter modeling techniques to achieve unprecedented accuracy in the emulation of a
+hardware synthesizer’s filter. By modeling the operation of the individual hardware
+components of the filter circuit, the warm nuances synonymous with analog sounds are
+recreated. This graph is a frequency domain plot as just a single example of direct circuit
+modeling in action; it shows the generation of harmonics at multiples of the resonant
+frequency, for both the Arturia Jupiter-8V and the Roland Jupiter-8. These harmonics are
+characteristic of the hardware synthesizer’s filters and are due to the non-linear behavior
+inherent in its analog circuitry. The harmonics generated add to the richness and warmth
+of the sound produced by the filter. As a result of the direct recreation of this analog
+circuitry, the same characteristics of the sound are present, thus giving the user a truly
+analog sound.
+Comparison of Harmonics generated by the filter circuits of the Arturia Jupiter-8V and the Roland Jupiter-8
+ARTURIA – JUPITER-8V – USER’S MANUAL 15
+2 INSTALLATION
+2.1 NOTES ABOUT SOFTWARE PROTECTION AND THE INSTALLATION
+Jupiter-8V 2.5 includes the Soft-eLicenser protection system. Compatibility with v1.0
+USB-eLicenser dongles is carried on to v2.0. Thus Jupiter-8V1 owners can use their USB
+dongles to authorize Jupiter-8V 2.5 update. Jupiter-8V 2.5 owners only (not 1.x) will
+store their licenses on a virtual dongle.
+Please refer to authorization section for further details about protection schemes.
+2.2WINDOWS INSTALLATION
+ If you purchased the Boxed version of the Jupiter-8V 2.5, insert the CD-ROM into
+the drive. Explore the contents of the CD-ROM and double click on the icon called
+Jupiter-8V2 Setup.exe.
+ If you purchased the Download version of the Jupiter-8V 2.5, double click on the file
+called Jupiter-8V2 Setup.exe that you saved from the Arturia web site.
+ The installer guides you through multiple steps
+16 ARTURIA – JUPITER-8V – USER’S MANUAL
+ After having accepted the license agreement, you can choose the folder in which
+the Jupiter-8V will be installed
+Choose the installation folder
+ Next, select the application or plug-ins that you wish to install. For more
+information on those protocols, please see to chapter 10 of this manual. The
+available options are:
+ARTURIA – JUPITER-8V – USER’S MANUAL 17
+
+Choose the components to be installed
+ For the installation of the VST protocols, you should select the installation folder of
+these plug-ins to allow the host application to use them. If you don’t know how to
+do this, refer to the appropriate chapter (Ch. 10).
+Select installation folder for plug-ins
+18 ARTURIA – JUPITER-8V – USER’S MANUAL
+ Set up the program’s shortcut in the Start menu, or use the default setting.
+ Check or not to install an icon on your desktop (disabled by default).
+ Before performing the installation, the installed components are summarized. Click
+on “Install”.
+ Finally, the installation of the eLicenser Control Center and the creation of a virtual
+dongle is done as part of the installation. Click on “Finish”.
+Completed Installation Dialog box
+The installation program now has enough information to finish. In a few seconds you will
+be able to authorize the Jupiter-8V 2.5.
+2.3 MAC OS X INSTALLATION
+ If you purchased the Boxed version of the Jupiter-8V 2.5, insert the CD-ROM into
+the drive. Explore the contents of the CD-ROM and double click on the icon called
+Jupiter-8V2.pkg.
+ If you purchased the Download version of the Jupiter-8V 2.5, double click on the file
+called Jupiter-8V2.dmg that you saved from the Arturia web site. Once the virtual
+disk is mounted, double-click on Jupiter-8V2.pkg.
+ The installation program, requiring administrative rights, may have the system ask
+you to enter the login of an administrative user of the system. In this case, enter
+your login and administrative password, and click on OK to continue the installation.
+ The installation program first displays a welcome page.
+ Next installed components will be displayed in a “Read Me” page.
+ARTURIA – JUPITER-8V – USER’S MANUAL 19
+ After the software license has been validated, the installation program will select
+the system disk as target by default. It is not possible to install Jupiter-8V on
+another disk. Click on continue to proceed with the installation.
+Choice of installation disk
+ Jupiter-8V will automatically install as a standalone application (functioning
+independently and apart from any sequencer host). In the same way, all the
+available protocols (VST, Audio Unit and RTAS) will be installed. For more
+information on these protocols, go to chapter 10.
+ Next, the installation program proceeds with the installation of the eLicenser Control
+Center and the creation of a virtual dongle.
+The standalone application will be installed in the “Applications” folder, and the different
+plug-ins will be installed in folders reserved to each type of plug-in.
+20 ARTURIA – JUPITER-8V – USER’S MANUAL
+3 AUTHORIZATION
+Now that your Jupiter-8V 2.5 has been installed, you need to authorize the synthesizer.
+ This doesn’t apply to owners of the Jupiter-8V previous version, who may use the software right away using
+their USB-eLicenser hardware dongle.
+Contrary to 1.x versions that used the USB-eLicenser protection scheme, the Jupiter-8V
+2.5 uses the “Soft-eLicenser” virtual dongle solution by default. Avoiding the use of a
+USB port, this system allows using the synthesizer on one machine, which must be
+connected to the Internet during the authorization process.
+ To transfer your license on another computer, or simply use your synthesizer on several computers (one
+instance at a time), you will need:
+_ to use one USB-eLicenser hardware dongle (sold separately, also used by many other software editors);
+_ in the eLicenser Control Center, to drag-and-drop your license from Soft-eLicenser to USB-eLicenser.
+This transfer, requiring a valid Internet connection, can be done both ways:
+_ from Soft-eLicenser to USB-eLicenser;
+_ from USB-eLicenser to Soft-eLicenser.
+Please check the eLicenser documentation installed on your computer for any further technical detail.
+The first step is to register your software in order to obtain the activation code that will
+enable you to actually use the software.
+You should have handy the license serial number of Jupiter-8V 2.5 and the unlock code
+(these are an integral part of the software and are printed on a small plastic card)
+ Connect your computer to the Internet, and go to this web page:
+http://www.arturia.com/login
+ If you don’t have any Arturia account yet, please create one now:
+This will bring you to this form:
+ARTURIA – JUPITER-8V – USER’S MANUAL 21
+If you already have an account, simply log in:
+ Once you are logged into your account, you can register your Jupiter-8V 2.5 and
+request your activation code. Go to the “My Registered Products” section of your
+account and click on the “Add” button:
+22 ARTURIA – JUPITER-8V – USER’S MANUAL
+ In the form that appears, select “Jupiter-8V” from the drop down menu, and type in
+your synthesizer serial number and unlock code (as written on the registration
+card):
+ You will then see the confirmation screen:
+ And finally there is a screen from which you can copy the eLicenser activation code.
+The very same information is sent to you by email as a backup.
+ Now that you have retrieved the activation code, launch the eLicenser Control
+Center. This application has been automatically installed on your computer along
+with the Jupiter-8V 2.5; it is accessible here:
+• Windows: Start > Programs > eLicenser > eLicenser Control Center
+• Mac OS X: Finder > Applications > eLicenser Control Center
+ The screenshots below have been taken using a computer running Mac OS X; however the process is strictly
+identical with a machine running under Windows XP/Vista/7. The same functions apply, only the graphical user
+ARTURIA – JUPITER-8V – USER’S MANUAL 23
+interface differs, and possibly also the language used. These little details should not prevent you from
+understanding the full process.
+ In the eLicenser Control Center main window you should see a “SeL” virtual
+dongle installed onto your computer.
+The eLicenser Control Center main window, showing an empty Soft-eLicenser.
+ In the eLicenser Control Center menu, click on the “Enter Activation Code” button,
+and enter the code when prompted. Simply paste in the 32-digit code you’ve just
+copied from your account on the ARTURIA website:
+24 ARTURIA – JUPITER-8V – USER’S MANUAL
+Enter the activation code
+ The eLicenser Control Center is now ready to download the software license that
+will allow you to use Jupiter-8V 2.5. Click on Start, the progress bar should anime
+until download completion. A popup window will confirm completion, just click
+“Close”.
+ Now the main eLicenser Control Center window should show your Jupiter-8V2
+license installed and activated:
+License is installed and activated
+Jupiter-8V2
+Jupiter-8V 2.0
+Jupiter-8V 2.0
+ARTURIA – JUPITER-8V – USER’S MANUAL 25
+It’s now time to launch Jupiter-8V 2.5.
+26 ARTURIA – JUPITER-8V – USER’S MANUAL
+4 QUICK START
+This chapter will allow you to familiarize yourself with the general functioning of the
+Jupiter-8V 2.5. This is a summarized presentation of the different parts of the
+synthesizer. You will find specified descriptions and details of all the parameters and
+screenshots in the following chapters.
+Chapter 9, entitled “Some Elements of Sound Design”, is particularly aimed at users that
+have no experience with a subtractive synthesizer, and wish to obtain basic knowledge in
+this domain.
+The Jupiter-8V interface
+4.1 STRUCTURE OF THE JUPITER-8V 2.5
+The structure of the Jupiter-8V allows you to play two tones at once (called “Lower” and
+“Upper” Programs in the terminology of the Jupiter-8). You can play the keyboard in
+three different ways:
+• “DUAL”: allows you to play the two Programs “Lower” and “Upper”,
+simultaneously on the entire keyboard.
+• “Split”: allows you to play the two Programs “Lower” and “Upper” divided
+separately over the two zones of the keyboard.
+Toolbar
+Preset /
+Modulation /
+Effects tabs
+Sequencer /
+Galaxy /
+Keyboard
+Sequencer’s
+transport
+LFO
+VCOs settings
+Arpeggio’s
+rate & gen.
+volume
+Master & Voice
+Detune
+Modulation
+Settings
+Arpeggio
+Settings
+Assign
+Modes
+Hold Key & Panel
+Modes
+Screen Mixer HPF/VCF VCA Virtual
+Keyboard
+Sequencer
+Outputs
+Steps Settings
+Envelopes
+General info /
+440 Hz tone
+Import /
+Export
+Favorite
+presets
+ARTURIA – JUPITER-8V – USER’S MANUAL 27
+• “Whole”: allows you to play the “Upper” Program over the full range of the
+keyboard.
+These three methods allow you to create very rich sonic combinations.
+4.2 USING THE PRESETS
+4.2.1 Selecting the presets
+The Jupiter-8V has two kinds of presets:
+4.2.1.1 The Patches
+The “PATCH” presets can save:
+• The configuration of the keyboard (methods “Whole”, “Dual” et “Split”)
+• The division zones of the keyboard (“Split”)
+• The types of playing (SOLO, UNISON, POLY1 and 2)
+• The midi configuration of the synthesizer
+• The settings of the arpeggiator
+• The settings of the “Modulation” zone (“BEND”, “MOD”, “PORTAMENTO”…)
+• The setting of the master effect (delay, chorus).
+4.2.1.2 The Programs
+The “PROGRAM” presets are the composed sounds of the Jupiter-8V 2.5. They contain:
+• All the synthesis parameters,
+• All the parameters of the Galaxy module and the sequencer.
+• The parameters of the voice effects (“Voices Effects”)
+Preset organization of the Jupiter-8V
+28 ARTURIA – JUPITER-8V – USER’S MANUAL
+To familiarize yourself with the different included sounds of The Jupiter-8V 2.5, we will
+select the preset “Full_Pad” situated in the bank “JMB / Pads/ JMB_Full_Pad”.
+ First, click on the button, on the toolbar, to open the expansion interface.
+ Then, click on the button “Presets” situated above the programming interface of
+the Jupiter-8V. This screen presents the interface in which to choose different
+presets.
+Click on the “presets” tab
+o 2 filtering lists allow you to select the search options that will help you find your
+preset. If you click on the first one, you will see an unfolding menu appear
+indicating the list of the available banks.
+ In the first filter, choose “Project” then select “JMB”.
+ In the second filter, choose “Mode” then select “Whole”.
+ Finally select the preset named “JMB_Full_Pad” preset in the result list.
+Select the preset “JMB_Full Pad”
+It is also possible to directly select the presets on the toolbar situated on the top of the
+Jupiter-8V interface:
+ Click on the one of the first 2 tabs situated on the tool bar to choose a filtering
+criteria – the name of the project for example.
+ Then click on the third tab to choose the name of the preset that you wish to edit.
+ARTURIA – JUPITER-8V – USER’S MANUAL 29
+Choose a preset patch from the toolbar
+The Jupiter-8V is delivered with 400 factory presets that will allow you to become
+familiarized with the tones of the synthesizer.
+ It is also possible to show all the presets when choosing the option “All” in the bank. For example, to see the
+bass presets, click on “All” in the selection of the bank and then click on “Bass”.
+4.2.2 Editing the presets
+To begin, we will start with a very simple manipulation.
+ Modify the brightness of the sound “Full_Pad” with the “CUT” slider (VCF for Voltage
+Controlled Filter). To do this, push or pull the slider. The timbre of the sound will
+become more or less “brilliant”. Tune this slider to your liking.
+Change the brightness of the sound
+ In the same way, you can increase the range of oscillator 2 (VCO2 for Voltage
+Controlled Oscillator) by an octave with the knob “RANGE”. Choose a value of “4'”.
+Tuning the second oscillator
+30 ARTURIA – JUPITER-8V – USER’S MANUAL
+While changing these first settings, you have modified the preset “Full_Pad”. Now you
+will be able to save the sound that you have just created.
+ To choose another destination for this sound, click on the icon “Save As” , then
+choose your location. For example, create a new Project while writing your name in
+the display.
+ Click on the display again to give the name that you wish to this new Patch.
+Saving a patch
+ To save a user preset (“Users”), click on the save button “Save”, in tool bar: The
+new settings will be saved in the framework of the currently selected preset without
+changing the name. If the modified preset is a «factory preset» (factory), it will not
+be overwritten and the window «save as» appears to create a user preset.
+ It is important to change the name of a preset in order to create a new one! Then the name of the preset
+that has been edited will be modified.
+4.3 THE 4 MAIN PARTS OF THE JUPITER-8V
+The Jupiter-8V offers 4 main parts:
+• The “Jupiter-8V” interface represents the interface of the original;
+• The “PRESETS” manager section;
+• The “SEQUENCER / GALAXY” interface to access the SEQUENCER and GALAXY
+modules;
+• The “EFFECTS” interface to access the effects;
+To open the extension panel of the Jupiter-8V 2.5, click on the then choose one of
+the 3 tabs available.
+ARTURIA – JUPITER-8V – USER’S MANUAL 31
+4.4 OVERVIEW OF THE JUPITER-8V USER INTERFACE
+The interface of the Jupiter-8V has 54 synthesis parameters and a programmer that
+allows you to navigate quickly through the 44 factory presets of the original machine.
+The knobs and associated switches to these parameters will allow you to create a nearly
+infinite variety of sounds.
+These parameters consist of:
+• 2 oscillators (VCOs) that deliver the basic audio signal thanks to the waveforms and
+allow the tuning of the sound (the frequency). VCO1 can produce triangle, saw tooth,
+variable pulse or square signals while VCO2 can produce sine, saw tooth, variable
+pulse or noise signals.
+• A mixer to mix the 2 VCO’s
+• A non resonant high pass 6 dB/oct filter
+• A resonant low pass 12/24 dB/oct filter
+• An LFO
+• 1 amplifier (VCA) allowing amplification of the signal between the filter to the stereo
+output.
+• Two envelopes (ADSR) to modulate the low pass filter and the VCA
+The synthesis parameters
+See how to quickly create a polyphonic sound with the Jupiter-8V 2.5:
+To be able to understand the principle of how to program the Jupiter-8V 2.5, we will take
+a very simple sound. Select the preset “UJ Brass« in the bank “KUJIIE” / “Brass”. The
+synthesis structure of this sound is relatively simple: the sawtooth waveforms of VCO 1
+are 2 are active and their signals are directed through the low pass filter. Afterwards the
+signal is routed through the mixer, and finally into the amplifier. An ADSR envelope
+modulates the cutoff frequency of the filter and a second ADSR envelope modulates the
+volume of the amplifier.
+32 ARTURIA – JUPITER-8V – USER’S MANUAL
+Signal path of the Jupiter-8V
+Start lowering the cutoff frequency of the low pass filter “VCF”. A sound with less
+brightness will result.
+ To do this, adjust the knob “Cutoff”. (For fine tuning, use the right mouse button or
+[Alt]+click on Mac)
+ Note that the cutoff frequency of the filter is also modulated by an ADSR envelope
+(Attack, Decay, Sustain and Release).
+Lower the cut frequency of the VCF
+ To hear the effect of the ADSR envelope on the cut frequency of the filter more
+clearly, increase the value of the resonance. This will amplify the filtering effect and
+the sound will begin to “ring”.
+Increase the value of the resonance
+ Change the length of the attack of this envelope (“Attack time” ENV1) so that filter
+rise time increases more or less quickly when a note is played.
+ARTURIA – JUPITER-8V – USER’S MANUAL 33
+Increase the length of the attack
+ In the same manner, change the value of the Decay; the filter frequency will
+decrease more or less quickly while you will play the keyboard.
+The filter envelope “Decay” parameter.
+Carry out a short modification on the second “ADSR” envelop to modulate amplitude.
+ Increase the “Attack” time of this envelope so that the volume of the sound
+increases progressively.
+Increase the “Attack” time of the amplitude envelope.
+ Don't forget to save your work by clicking on the “SAVE AS” button, situated on the
+Jupiter-8V toolbar.
+4.5 THE (ADVANCED) MODULATIONS SECTION
+In the “MODULATIONS” section, there are sources of additional modulations allowing an
+extension of the playing possibilities and of the synthesis. This section offers two types of
+interfaces: SEQUENCER is accessible while clicking on the “SEQ” button.
+34 ARTURIA – JUPITER-8V – USER’S MANUAL
+4.5.1 Creating a melodic sequence with the SEQUENCER
+The sequencer is accessible by clicking on the “MODULATIONS” tab, situated on the
+expansion panel. Click on the “SEQUENCER” icon.
+The sequencer is a 32-step “step sequencer”. It allows the creation of several melodic
+lines (when one of the three available modulations is affecting the frequencies of the
+VCO) as well as creation of dynamic modulations of other parameters such as the cut-off
+frequency of the VCF or on the width of the square waveform of the VCO's.
+It enables you to affect up to 3 simultaneous parameters.
+The step sequencer
+In this chapter we will see how to create a simple melodic sequence.
+ Click on the “MODULATIONS” tab, and then click on the “SEQUENCER” tab to bring
+up the interface.
+Click on the “SEQUENCER” button
+ Connect the frequency of VCO1 to the first modulation output and click the “Q”
+button to activate the quantize factor by half-tones for the frequency values.
+Set Sequencer Output 1
+ARTURIA – JUPITER-8V – USER’S MANUAL 35
+ Connect the frequency of VCF to the second modulation output and set the amount
+knob to let it blend in to your liking.
+Set Sequencer Output 2
+ Enabling “Retrig” button triggers envelopes at each steps of the sequence
+Set Retrig
+ To start the sequencer, set the “start/stop” mode to “Free running” and click on
+“Play”
+Play Sequence
+ Set the value of each step by clicking and dragging the 16 bars up or down to
+create your melody.
+Set the value of each step
+ Set the speed of the sequencer with the “Rate” knob.
+36 ARTURIA – JUPITER-8V – USER’S MANUAL
+ If it is synchronized with an external sequencer like Cubase or Logic Audio for example, use the
+“Quantization” (“Q”) parameter, situated next to the “sync” button in the same section. Choose one of the
+tempo divisions to set the speed to your likings.
+To add additional punch to the sequence, place accentuations on certain notes (“Accent”
+- envelopes “Attack and Decay” are effective on the cutoff frequency of the VCF):
+ Click on the “Accent” button and apply it to the steps you want to accentuate.
+ Set the intensity of this modulation with the “Level” knob.
+ Set the attack time “A” and decay time “D” of the envelope to your convenience
+The accent settings
+ There is also the option to add alternative quantization («SWING«) to the sequence.
+This quantization can be useful for the composition of a piece of «house music«, for
+example.
+4.5.2 Create progressive modulations with the GALAXY unit
+Galaxy allows creating very complex modulations thanks to the interaction of 3 LFOs. The
+first two LFOs allow inter-modulation with a different parameter on the X and Y axes.
+They are represented on the graphical interface of the unit. A third LFO allows modifying
+the alpha angle between the 2 X and Y axes.
+ The «GALAXY« module
+ Click on the “MODULATIONS” tab then on the “GALAXY” tab to show the interface.
+ARTURIA – JUPITER-8V – USER’S MANUAL 37
+Click on the “GALAXY” tab
+ Choose a parameter (for example, the HP VCF Cutoff) for the X axis, then adjust
+the speed parameter of the LFO to your liking.
+Choose a destination for the modulation of the X axis.
+ Choose a parameter for the Y axis (for example the LP VCF Cutoff) then adjust the
+speed parameter of the LFO to your liking.
+Adjust the speed of the LFO of the Y axis
+See how to apply a modulation to automate the movements of the axis. This will shift the
+position in a cyclical way. You will obtain unusual and very progressive modulations
+thanks to this unit.
+You also can modify this angle manually thanks to the “ANGLE” knob.
+ Choose the triangle waveform then adjust the speed parameter of the LFO to your
+liking.
+38 ARTURIA – JUPITER-8V – USER’S MANUAL
+Choose the triangle waveform for the α (alpha) angle
+4.5.3 Control parameters with the Keyboard unit
+The Keyboard unit enables you to control parameters via velocity and aftertouch.
+ Click on the “MODULATIONS” tab then on the tab called “KEYBOARD” to show the
+interface.
+Click on the “KEYBOARD” tab
+ Select the parameter to be controlled by the velocity and then set the amount knob
+to your liking.
+Choice of the modulation destination, setting its amount
+ Customize how velocity modifies the selected parameters thanks to a curve. The X
+axis represents the amount of velocity while the Y axis represents the amount sent
+to the parameters. This curve can be controlled thanks to 3 points.
+ARTURIA – JUPITER-8V – USER’S MANUAL 39
+Customize the velocity curve
+ You can do the same for the aftertouch.
+Customize the aftertouch curve
+4.6 THE EFFECTS
+The “EFFECTS” interface of the Jupiter-8V offers unique signal processing possibilities,
+allowing you to insert effects in the synthesis chain, between the VCO and the VCF and
+between the VCF and the VCA. These combinations allow you to create a wide variety of
+new sounds.
+Additionally, you will be able to connect two effects “Patches” that are situated at the
+audio output of the synthesizer.
+The interface of the effects
+To familiarize yourself with this function, click on the “EFFECTS” button situated with the
+other tabs.
+ Using the preset filters, choose the Project “JMB” / Type “Bass” / Preset
+“JMB_Bass01”.
+40 ARTURIA – JUPITER-8V – USER’S MANUAL
+ In order to enrich the sound, the effect “Distortion” has been inserted between the
+VCO and VCF (Filter). Change this effect to “No Effect” and back to “Distortion” to
+observe the differences of sound.
+Choose the effect of “Distortion” in the effects menu.
+The interface of the distortion effect is now on screen.
+ Adjust the distortion amount with to the “Drive” knob and see the changes in the
+sounds as well as in the curve.
+ Change modulation source and amount.
+ Adjust the mix of Dry/Wet signals.
+The “Distortion” effect
+Place a second effect between the VCF and the VCA. Take the “Param EQ”. Certain
+parameters of this effect will be modulated by the LFO in order to create an effect similar
+to phasing. The Param EQ is composed of 4 filters: Band 1 is a low shelving filter, Band 2
+and 3 are middle peaking filters and Band 4 is a high shelving filter. They can be
+activated or deactivate by clicking on the “Band 1/2/3/4” buttons.
+• Adjust the volume of the frequency of “band 3” with the knob “G” (GAIN) or simply
+modify the point in the gain curve
+Set the volume of the frequency for “band 3”
+ARTURIA – JUPITER-8V – USER’S MANUAL 41
+ Apply a modulation on the frequency of band “3” with the LFO. To do that click on
+the button “Mods” situated on the right of the EQ interface. This will show you the
+possible modulation connections available.
+ Click on the display situated next to “Band3” / “F” to open the menu of the
+modulation sources. Choose the “LFO”.
+ Increase the level of the knob “Modulation amount” situated next to the display to
+hear the modulation on the frequency of the band 3.
+Increase the “Modulation amount” potentiometer
+4.7 THE “PATCH” SECTION OF THE EFFECTS
+The section of the “patch” effects allows you to add 2 master effects to your sound. They
+are accessible while clicking on one of the 2 displays situated down below to the left of
+the interface “Effects”. Choose the “St Chorus” for the first effect and “St Delay” for the
+second one. The editor will appear to the right (as for the effects “Voices”).
+Click on the display “patch”
+4.7.1 The chorus
+The Chorus effect allows doubling the original sound with slightly out of tune copies in
+order to make a deeper and livelier sound. Three types of stereo chorus are available,
+from simple to very wide.
+ Activate the “ON/OFF” button of the Chorus in the effects section, placed to right of
+the tool bar.
+42 ARTURIA – JUPITER-8V – USER’S MANUAL
+ Activate the button “ON/OFF” of the Chorus
+ Adjust the “Dry/Wet” knob of the Chorus in a manner that is balanced between the
+original sound and the treated sound.
+ Next, turn the “Rate” knob of the Chorus to set the speed of the oscillations
+affecting pitch.
+ Finally, set the stereo width of the Chorus by turning the “Spread” knob.
+The settings of the chorus
+4.7.2 The delay
+The Delay is a stereo echo effect that adds space to your sound. It possesses
+independent settings for speed and the number of repetitions on the right and left side.
+Therefore it is possible to create a big number of rhythmic combinations between the
+repetitions. The speed of the Delay can also be synchronized to the MIDI tempo of your
+sequencer. Let’s use the “JMB_Bass1” example again and see how to use the effect on
+this sound:
+ Activate the “Delay” button on the tool bar. The effect is activated
+ Set the “Dry/Wet” knob of the Delay in a manner to balance between the original
+and the treated sound
+ Turn next the 2 knobs “TIME L / TIME R” to set the speed of the repetitions for the
+right and left side.
+ It is also possible to set the number of repetitions (Feedback) for each stereo side
+(“Feedbk R” and “Feedbk L”).
+ARTURIA – JUPITER-8V – USER’S MANUAL 43
+The settings of the delay
+4.8 REALTIME CONTROLLERS AND MIDI ASSIGN
+As its brilliant sounding ancestor, The Jupiter-8V is particularly adapted for playing in real
+time. One of the big evolutions in comparison with the original is the possibility to assign
+any knob of the Jupiter-8V to an external midi controller.
+For example:
+ Click on the “MIDI Learn” button
+ Click on the knob “Cutoff”. The MIDI assign option appears.
+ Move the controller of your choice (the knob of modulation for example). The knob
+of the Jupiter-8V will begin moving at the same time.
+ Then you will be able to record the movements of your MIDI controller in your MIDI
+sequencer or simply manipulate the sound in real time with your controller live.
+”Cut-off” parameter waiting for the control to be assigned
+MIDI CC #81 assigned MIDI NRPN MSB:16 LSB:35
+44 ARTURIA – JUPITER-8V – USER’S MANUAL
+In addition to the “Learn” button, midi assignments can be set by clicking on the midi
+control number labels and “Use NRPN” checkbox.
+To save the setting that we have just carried out during this chapter, click on the button
+“Save” situated on tool bar.
+ The MIDI settings will only be saved when you quit the application of the Jupiter-8V 2.5. This is the same
+with the stand alone version and the plug-in version as well.
+ARTURIA – JUPITER-8V – USER’S MANUAL 45
+5 A UNIQUE SYNTHESIZER, WHY ?
+5.1 THE ROLAND JUPITER-8
+The Jupiter-8 is capable of creating very versatile sounds. The Jupiter-8 sounds the way
+it looks, ‘sleek and polished’. It offers oscillator sync, cross modulation, a switchable
+12dB/24dB filter and polyphonic portamento. It also features a superb arpeggiator. The
+sound design opportunities are virtually endless.
+The filter (VCF) structure is one of a special kind. It is composed of two independent filter
+units, a non-resonant 6 dB/Octave high pass filter and a resonant 12 or 24 dB/Octave
+low pass filter. The combination of the non-resonant high pass filter with the resonant
+low pass filter, enables creating very characteristic Roland style sounds. This structure
+can also be found on the Roland Juno series.
+The Jupiter-8 is often considered the biggest and fattest of the Roland Jupiter family. The
+Jupiter-8 offers eight analog voices. The sound of the Jupiter-8 is often referred to as fat
+and crispy clear at the same time. The Fast envelopes make it possible to create punchy
+sounds. This is great for bass and stab sounds in particular. The colorful interface with
+lots of sliders and knobs is inviting for sound designers and producers. Furthermore, it
+was one of the first synthesizers that offered a keyboard split and layer possibility. In
+fact, the Jupiter-8 complemented its competition by bringing something different.
+In 1982, Roland released an upgraded Jupiter-8, the JP8A. It upgraded the Jupiter-8 with
+a number of enhancements. The most noticeable changes where an improved DAC with a
+higher resolution of the auto-tuning system from 12- to 14-bit, and a brighter LED
+screen. The Jupiter-8 has become one of the most revered of all synthesizers.
+The electro-pop community became quickly convinced by the qualities of the Jupiter-8.
+'Relax', by Frankie Goes to Hollywood was produced incorporating a Jupiter-8, and
+players such Vince Clarke, John Foxx, Howard Jones and Martyn Ware also used it
+enormously. The path to classic status of the Jupiter started there.
+5.2 THE ARTURIA JUPITER-8V 2.5
+Aside from recreating the original in every aspect, the Jupiter-8V adds many new
+functions which make it even more attractive to use. The Jupiter-8V offers various new
+editing possibilities which can result in sounds that were never heard before.
+The galaxy module creates very complex modulations with interaction of 3 LFO’s. The
+first 2 LFO's can each modulate a different parameter on a X/Y axis. The third LFO can be
+set to rotate the X/Y axis at a certain speed. This is beautifully visualized in the interface
+of the Jupiter-8V and enables a totally new dimension for sound design.
+Furthermore the Jupiter-8V offers two connections of «Voice« effects. The connections of
+the effects can be made inside the synthesis chain, between the VCO and the VCF and
+between the VCF and the VCA. These effects can be modulated by the different available
+sources of modulations such as the LFO or the envelopes. Combinations of effects and
+modulations provide the Jupiter-8V with even more sonic power. Two « PATCH « effect
+46 ARTURIA – JUPITER-8V – USER’S MANUAL
+modules are available on the end of the synthesis chain. The two modules are placed on
+top of the output of the VCA, and cannot receive external modulations. Amongst these
+«PATCH« effects are a delay, reverb, flanger and a phaser.
+Another addition is the sequencer which is a 32-step «step-sequencer« It allows the
+creation of several melodic lines as well as creation of dynamic modulations of different
+parameters such as the cutoff frequency of the VCF or the width of the square waveform
+of the VCO's.
+There is a user friendly preset and patch structure for easy yet expandable management
+of the sounds. It is possible to add characteristics to sounds to be saved. This provides
+an easy and effective way to browse patches and find the most relevant one quickly.
+As a matter of fact, every single setting can be saved and recalled in a heartbeat. This
+allows perfect integration with your project and saves a lot of time compared to the
+original Jupiter-8.
+The Jupiter-8V delivers a sound that is full of character and highly editable. It can be the
+perfect companion on every kind of musical project, with the ease of use of the 21st
+century.
+ARTURIA – JUPITER-8V – USER’S MANUAL 47
+6 THE INTERFACE
+6.1 TOOL BAR
+The tool bar consists of an ensemble of essential icons for the Jupiter-8V organized from
+left to right allowing you to:
+• Access drop menus offering filters with the following criteria:
+o Characteristics
+o Factory / User
+o Mode (Whole / Dual / Split)
+o Project
+o Type
+• MIDI activity light
+• Choice of MIDI channels:
+o All
+o 1 to 16
+• The number of polyphonic voices
+• Playing Modes:
+o Poly/Mono Low: when legato between two notes, the lowest note gets priority
+o Mono High: when legato between two notes, the highest note gets the priority
+o Mono Last: when legato between two notes, the last note played gets the
+priority
+• Unison: number of voices
+• CPU meter
+• “Open Sound Map” button
+• “MIDI Learn” combo button
+• “Open” and “Close” buttons (access to preset, advanced modulation and effects
+panels)
+Tool Bar
+48 ARTURIA – JUPITER-8V – USER’S MANUAL
+6.2 USING THE PRESETS
+The presets allow saving and recalling the sounds of the Jupiter-8V 2.5. A preset contains
+all the new settings of the various controllers to reproduce a sound. In the software
+version, just like on the original one, the presets are classified in two categories of
+presets: The “Patches” and the “Programs”.
+6.2.1 The types of presets
+6.2.1.1 The patches
+The “PATCH” presets can save:
+• The modes of playing (“Whole”, “Dual” or “Split”)
+• The settings of the keyboard (“Split”)
+• The types of playing (SOLO, UNISON, POLY1 et 2)
+• The MIDI configuration
+• The settings of the arpeggiator
+• The modulation module settings (“BEND”, “MOD”, “PORTAMENTO”…)
+• The master effect settings (delay, chorus).
+6.2.1.2 The Programs
+The “PROGRAM” presets are composed of sounds from the Jupiter-8V 2.5. They contain:
+• All the synthesis parameters,
+• All the Galaxy, Sequencer and Keyboard parameters
+• The voice effects parameters (“Voices Effects”)
+Patch/preset window
+The Jupiter-8V is delivered with several factory sound banks. Of course, it is also possible
+to create sound banks yourself, containing any number of banks and presets. The factory
+sound banks are not directly modifiable. Nevertheless it is possible to modify a sound
+based on a factory preset and save it in a “user” bank.
+6.2.2 Selection of a preset PATCH or PROGRAM
+The Preset PATCH banks of the Jupiter-8V are permanently selectable from the left part
+of the toolbar.
+ARTURIA – JUPITER-8V – USER’S MANUAL 49
+You have two options to select a preset:
+6.2.2.1 Select from the toolbar
+The fastest way to select a preset is to click on the “preset” buttons on the toolbar. Two
+preset filter windows, situated on the left of the preset screen allow preset selection
+according to available criteria.
+Select a preset from the toolbar
+6.2.2.2 The “PRESETS” screen
+The second solution is to use the “PRESETS” screen to select a preset PATCH or
+PROGRAM.
+To do that, open the extension panel (click on the button) situated on the left right
+of the tool bar.
+Then, click on the “PRESETS” tab to open the presets page. This page offers you two
+possibilities.
+Click on the preset tab
+This page shows two distinct sections:
+• The left portion allows selection of presets by category (PATCH / PROGRAM
+Lower or Upper).
+• The right portion allows searching with the help of two filter criteria.
+Four buttons situated above the choice fields, allow you to create, save, save as or delete
+a preset.
+50 ARTURIA – JUPITER-8V – USER’S MANUAL
+The Preset page
+Once the filters criteria are set, you can select Patch presets in the resulting list on the
+right of the page. Click on “PATCH”, then select criterion (for instance, Project: JMB,
+Type: Pad) and finally choose a preset in the list.
+ Selection of a preset from the same bank
+To select a preset “PROGRAM” click on the “UPPER” or “LOWER” button. The name and
+the filter criteria of the preset are shown in the field above the button. A list of selection
+filters appears. After selection of the filter categories of interest, simply select the preset
+by clicking on the preset name.
+ Click on the button “upper”
+Selection of the filter criteria
+ARTURIA – JUPITER-8V – USER’S MANUAL 51
+The choice of filters is the same as with “PATCH” presets.
+In the unfolding menu, the choice “No filter” is particularly useful to quickly pass through
+presets of the same type.
+If a preset is modified, this symbol “*” will appear next to the name of the preset.
+ The key mode must be in Dual or Split in order to get access to the Lower “Prog” part.
+6.2.3 Creating a new preset
+To create a new preset (PATCH or PROGRAM), click on the button, the name:
+“New_Patch” or “New_Prog” will appear. Then you can work on the parameters of the
+sound, to save the sound under the same preset name while clicking on the save button.
+You can also change the name of the new preset by clicking on the name.
+ The new preset will always be a patch of the type WHOLE by default. To change the preset mode, click on
+one of the two other types you would like to choose.
+6.2.4 Save a user preset
+To save your current settings of the preset, click on the “Save” button on the
+toolbar.
+6.2.5 Save a user preset using the “Save as” option
+To save your current settings of the preset under another name, click on the «save as«
+button on the toolbar . A dialog window will appear. It will let you set the name of the
+preset PATCH and set the search filter type of the preset “PROJECT”. Click on “OK” to
+save. At this point, the preset PROGRAM will not be modified, even if you changed the
+synthesis parameters. To save a preset PROGRAM, check “Save As”. You can fill in the
+name of the project and the name of the patch to define the search criteria. You can also
+click cancel to exit this menu without saving.
+“Save As” and the save menu
+52 ARTURIA – JUPITER-8V – USER’S MANUAL
+ When you work from a factory preset, it cannot be overwritten. Clicking on the “Save” button will not
+replace the factory preset, but will automatically open the “Save As” dialog to save it as a user preset.
+6.2.6 Delete a preset
+To delete a selected PATCH or PROGRAM, click on the “Erase” button . A dialog
+window will appear. Click on “OK” to delete the preset.
+6.2.7 Import / Export a preset bank
+It is possible to import new banks of presets for the Jupiter-8V 2.5.
+To import a new “project” bank, click on the import button situated on the right of the
+interface of the Jupiter-8:
+Preset “Import” button
+When this button is selected, a window appears, allowing the choice of a preset bank for
+the Jupiter-8V 2.5. Choose a file to import, (it will be shown as a “xxx.j8e” file) and click
+on “Open”. The new bank of presets will appear automatically among the available
+“Project” banks.
+The Jupiter-8V offers the possibility to export user created sounds in order to use them
+on other machines, or to share them with other users. It is possible to export a preset, a
+sub-bank, or a complete bank. To export the “project”, click on the export button for the
+preset-bank on the tool bar.
+Then select the type of export that you want to carry out (bank, sub-bank or preset), in
+the list. A window appears, allowing the choice of a destination folder and a file name for
+the bank to export:
+ARTURIA – JUPITER-8V – USER’S MANUAL 53
+Export a preset “project” bank
+6.3 USING THE CONTROLLERS
+6.3.1 Knobs
+Generally DAWs offer several knob control modes.
+The default control mode for knobs with the mouse is the circular mode: click on the
+knob and turn around it in order to change the value of the controller. The circular mode
+gives high precision in the manipulation of controls: The further the mouse goes from the
+knob, the higher the precision of the setting.
+In linear mode, the knob can be set only by vertically moving the mouse, not by going
+around it. Like the sliders, it is possible to obtain a higher precision by right clicking or
+[Alt]+click on the knob concerned.
+The linear mode can sometimes be simpler to use than the circular mode, although we
+can lose in precision (the precision is limited by the number of vertical pixels on the
+screen on which the mouse movements are being evaluated). Movement to linear mode
+is available in the options of your DAW. In Cubasetm, for example, this choice can be
+found via the “File/Preferences/Edit/Controls” menu, and is found in the “General” tab of
+the window.
+6.3.1.1 Potentiometers
+As this name indicates, this type of control can be rotated. They can set a continuous
+value (frequency of the VCO, balance programs for Lower and Upper keyboard for
+example) or a set a parameter for an individual selection (choices of the wave forms of
+the oscillators or LFO, for example)
+54 ARTURIA – JUPITER-8V – USER’S MANUAL
+A rotary knob
+6.3.1.2 Sliders
+These controls are vertical and linear. They set a continuous setting (cutoff frequency of
+the VCF filters, or settings of the two ADSR envelopes, for example)
+A vertical slider
+6.3.2 Buttons
+There are several types of buttons on the Jupiter-8V. Some activate or deactivate a
+parameter (activation of the arpeggiator, for example). A red led on the button indicates
+that the parameter is active.
+A selection button
+6.3.3 Switches
+There are several types of switches on the Jupiter-8V. Certain ones activate/deactivate a
+parameter. For example, one is used to turn “ON” or “OFF” modulation towards oscillator
+synchronization. To change its state, simply click the switch.
+A switch
+6.3.4 Pitch Bend wheel
+The Pitch bend controls the frequency/pitch of the synthesizer oscillators. Simply click on
+the wheel while playing a note on the master keyboard or from a sequencer, then move
+ARTURIA – JUPITER-8V – USER’S MANUAL 55
+the mouse horizontally to modify the pitch. The wheel comes back to its initial position at
+the release of the mouse.
+The Pitch Bend Wheel
+6.3.5 Modulation button
+The modulation button applies the modulation created by the LFO, according to the
+modulation rate set by the LFO. The manipulation of this button is very simple:
+ Click on it to apply the modulation then click again to stop it.
+ To adjust the rate of modulation, set the linear potentiometer called “LFO mod”
+situated on the left side of the pitch bend. Using this you can control the rate of
+modulation towards the oscillators’ pitches (VCO) to obtain an effect of vibrato, or
+towards the filter (VCF) to obtain a “wah wah” effect.
+The modulation button
+6.3.6 Virtual keyboard
+The keyboard lets you listen to the synthesizer sounds without the need for an external
+master MIDI keyboard, and without programming a melody in the sequencer. Just click
+on a virtual key to hear the corresponding sound. There is no MIDI output for the
+keyboard.
+6.3.7 LCD Screen
+The LCD screen on the extension panel of the Jupiter-8 allows selection of presets,
+editing of the sequencer, as well as the Galaxy interface, the keyboard settings and the
+effects.
+ To open the extension panel, click on the “Open” button situated on the tool bar.
+ To choose which function to edit, click on one of the buttons situated on left top
+corner of the screen. (« PRESET « for example). The
+« SEQUENCER/GALAXY/KEYBOARD « screen has two tabs that let you edit the
+sequencer and the galaxy module.
+56 ARTURIA – JUPITER-8V – USER’S MANUAL
+LCD screen
+6.3.8 MIDI Control
+Most of the knobs, sliders and switches on the Jupiter-8V 2.5 can be manipulated with
+external MIDI controllers. Before anything else, make sure that the MIDI device is
+correctly connected to the computer, and that the sequencer or the standalone Jupiter8V 2.5 application is correctly configured to receive MIDI events coming from the device.
+6.3.8.1 Learn Menu
+A new button and menu have been introduced in Jupiter-8V 2.5. The button and menu
+provide access to MIDI assign functionalities.
+The left part of the button activates the MIDI learn mode, while the right part (small
+down arrow) opens the control management menu.
+“Learn” Menu
+“Learn Mode” Button
+The “Learn” Menu is composed of 2 sections:
+• First section provides:
+o “New Config” creates a new controller set
+o “Save Config As” saves current configuration to a new one
+o “Delete Current Config” removes current configuration from list
+• The second section contains the list of existing configurations:
+o The checked one is the currently selected MIDI map
+o Click on a configuration to load it
+ARTURIA – JUPITER-8V – USER’S MANUAL 57
+6.3.8.2 Assigning MIDI Controls
+In order to start assigning MIDI controls, click the “Midi Learn” button (left part). The
+button remains highlighted to indicate that the “learn mode” is ON.
+Click on a knob or button in the GUI to open the MIDI assignment popup.
+MIDI assignation popup
+• Learn assignment
+The fastest and easiest way to assign a control is to move the fader, knob or button for it
+to be recognized by Jupiter-8V 2.5.
+• Manual assignment
+It is also possible to change the assigned MIDI control number by clicking on Control#xx
+and select a specific value.
+• Support for NRPN
+In addition to MIDI Control Change messages, NRPN messages are now supported: either
+send NRPN MIDI control messages to Jupiter-8V 2.5, or check NRPN, then manually
+select LSB# and MSB# numbers:
+MIDI assignation popup, NRPN activated
+• Remove assignment
+Assignments can be removed by clicking the “Clear” button. The message “Unassigned”
+will then be displayed.
+Continue selecting the parameters you want to map to create a complete configuration.
+Plug-in parameter
+name
+Control
+number
+Assigned
+or not
+58 ARTURIA – JUPITER-8V – USER’S MANUAL
+6.3.8.3 Manage Configurations
+New in Jupiter-8V 2.5: the possibility to maintain multiple configurations.
+• Default configuration
+By default, Jupiter-8V 2.5 loads the configuration for Arturia Analog Experience
+keyboards.
+• Select one configuration
+A configuration is loaded by clicking the corresponding entry in bottom part of “Learn
+menu”.
+• Create a new configuration
+A new configuration can be created by clicking on the “Learn menu”, “New Config” entry.
+This will open a popup: enter the name you want to call your configuration and click on
+the “SAVE” button. A new entry for your configuration now exists in the list of available
+configurations.
+You may now fill in this initially empty configuration by performing the assignment
+operations described in the previous section.
+• Copy a configuration
+It is possible to copy a configuration by loading it and then clicking on “Save Config As”.
+A popup opens: enter the name of your configuration. A new entry for your configuration
+now exists in the list of available configurations.
+• Remove a configuration
+It is possible to remove a configuration by first loading it and then clicking on “Delete
+Current Config”.
+6.3.8.4 Minimum and Maximum Ranges
+For each assignment, a minimum range value and a maximum range value can be set.
+This allows you to limit how much the controller will affect the parameter on Jupiter-8V
+2.5.
+• The assigned parameter will have the configured minimum value when the
+controller will be at its lowest position
+• The assigned parameter will only reach the configured maximum value when the
+controller will be at its highest position
+• You can invert (Negative Slope) the Min and Max so that parameter will have
+minimum value when control has the highest value, and parameter will have
+maximum value when control has the lowest value
+ARTURIA – JUPITER-8V – USER’S MANUAL 59
+parameter_value = MIN + (MAX – MIN) * control_value
+6.3.8.5 Multiple Assigned Parameters
+It is possible to assign multiple parameters to a single control. This allows you to change
+many parameters with one fader or knob.
+• Activate “ Learn” mode, select a parameter (GUI control)
+• Tweak control to assign it (optionally setup minimum and maximum)
+• Select a second parameter
+• And tweak the same control
+• Deactivate “Learn” mode
+Tweaking assigned control should modify both parameters with regards to assignation
+setup (Min, Max).
+6.3.9 The preference screen
+On this screen, you are able to:
+• See the version of the software
+• Read the credits
+• Activate or deactivate the pop-up windows animations
+To open this window, click on the “About” button situated on the bottom right of the
+Jupiter-8V 2.5 interface.
+Input
+control
+values
+MAX
+MIN
+POSITIVE SLOPE
+Output
+parameter
+values
+Input
+control
+MAX values
+MIN
+NEGATIVE SLOPE
+Output
+parameter
+values
+Input
+control
+values
+MAX
+MIN
+DEFAULT
+Output
+parameter
+values
+60 ARTURIA – JUPITER-8V – USER’S MANUAL
+6.4 THE SOUND MAP
+The sound map is an innovative preset explorer which offers an easy and revolutionary
+way to locate and choose a preset on a map area, thus simplifying preset management
+and making it much quicker to find an appropriate sound.
+The sound map also offers a brand new interface for creating new sounds thanks to
+morphing feature works between four presets.
+The Sound Map offers three views:
+• The MAP main interface: the sound map classifies the presets thanks to statistical
+methods in order to organize the sounds on a map from their own audio
+characteristics.
+• The LIST presets list: this page offers a more classical interface to classify the
+presets using lists and filters to find the desired sound.
+• The COMPASS morphing interface: this page allows creating new sounds in real
+time thanks to a morphing result with up to 4 presets.
+Let’s have a deeper look in the Sound Map different views:
+o To open the main Sound Map interface, click on the SOUND MAP button located
+in the toolbar.
+o To open the preset list page, click on the LIST button, on the top right of the sound
+map interface.
+Open the List interface
+o To open the preset morphing page, click on the COMPASS button.
+Open the Morphing interface
+o To return back to the main sound map interface, click on the MAP button
+Return back on the map interface
+ARTURIA – JUPITER-8V – USER’S MANUAL 61
+6.4.1 The MAP main interface
+The Sound Map main interface shows a map where all the presets of the Jupiter-8V 2.5
+are spread out, organized by their different types of sound and their own audio
+characteristics.
+The Map interface
+The types of presets are represented by different geometrical symbols and colors for an
+easy way to locate them:
+ “Bass” sounds
+ “Brass” sounds
+ “EFX” sounds
+ “FM” sounds
+ “Guitar” sounds
+ “Keyboard” sounds
+ “Lead” sounds
+ “Pad” sounds
+ “Percussive” sounds
+ “Sequence” sounds
+ “Strings” sounds
+ “Others” sounds
+• To select and to listen a preset, directly click on one of the icons, anywhere you
+want on the map area. The icon is now highlighted in red. If you hold a few seconds
+on the selected preset, a popup appears and indicates the name of the preset.
+62 ARTURIA – JUPITER-8V – USER’S MANUAL
+Select a preset
+You can create new presets thanks to an exclusive real time morphing feature:
+o Click between several presets and drag the mouse. Four red arrows drawing a cross
+appear linking the group of four presets. The sound of the Jupiter-8V 2.5 will
+modified with regards to the distance between the mouse pointer and the selected
+presets. Get closer to a preset to make the synth sound like this preset does.
+Morphing between a group of presets
+o You can now drag your mouse between those presets. The green arrow shows you
+the starting point of your motion.
+o When you release the left mouse button, you can play the resulted sound and, if
+you wish, you can save it on a Jupiter-8V 2.5 user bank.
+In this way it is very easy to quickly get some new and exciting sounds without
+programming anything on the synthesizer interface.
+6.4.2 The Sound Map overview
+On the top right of the Sound Map main interface, you can see an overview of this map.
+You can use the map overview for navigating into the map and to zoom in or out inside
+of the map area.
+ARTURIA – JUPITER-8V – USER’S MANUAL 63
+The map overview interface
+o To navigate into the map, click inside of the red square and drag it on the map area
+to view other sections of the Sound map.
+o To zoom in the view on the sound map, click on the Zoom slider, under the
+overview window, and drag it towards the right to increase the size of the map.
+o To zoom out the view on the sound map, click on the Zoom slider, and drag it
+towards the left to decrease the size of the map.
+The zoom slider
+ You can also use the “ZOOM +” or “ZOOM -” buttons, under the slider, to increase or decrease the map size
+step by step (by a factor of 1).
+o Clicking on the FIT ZOOM button allows resizing the map to its global size.
+6.4.2.1 The instrument type filter window
+On the right of the map main interface, an instrument type filter window allows you to
+choose which type of preset you want to see (or to hide) on the map. By default, all
+types of presets are selected.
+The instrument type filter
+To select an individual or a group of instrument types:
+64 ARTURIA – JUPITER-8V – USER’S MANUAL
+o First click on the All button , on the bottom of the type filter window: this
+will hide all the instrument types from the sound map.
+o Then, select the type(s) you want to see by clicking on the corresponding square
+box(es). A check appears on the selected box(es) and the type(s) of preset appears
+on the map interface.
+Show pad presets
+This is a good way to simplify and refine the preset search.
+• If you click again on the All button, all types of presets will be displayed on the
+map.
+6.4.2.2 Preset snapshot memories
+You can select up to four presets, anywhere on the map interface, and save them on up
+to four snapshot memories. You will be able to use those four presets on the COMPASS
+view to create new sounds by morphing feature (see below for more details on this
+feature).
+Of course, you can save any kind of preset on these four snapshot memories.
+Select a snapshot memory
+To save a preset on a snapshot memory:
+o Select a preset on the sound map main interface.
+o Hold the [Shift] key and select one of the four snapshot memory buttons. The
+snapshot memory button is now highlighted in red.
+o Repeat the same actions if you wish to save presets on the three other snapshot
+memories.
+o When all memories already contain a saved preset, you can replace them with other
+presets.
+o Select another preset anywhere on the Sound Map interface, click on any of the 4
+snapshot buttons while pressing the [Shift] key.
+ARTURIA – JUPITER-8V – USER’S MANUAL 65
+6.4.3 The LIST preset manager
+The list preset manager offers a more traditional way to explore presets using a list
+interface in which the presets are classified and filtered in order to simplify preset
+management.
+o To open the list interface, click on the LIST button located on the toolbar of the
+Sound Map.
+Click on the LIST button
+The list preset interface is very simple; you can see four columns showing, from left to
+right:
+ The preset names
+ The instrument type
+ The name of the sound designers
+ A reminder of the presets added to a snapshot memory
+Preset list interface
+66 ARTURIA – JUPITER-8V – USER’S MANUAL
+All this data is classified by alphabetical order.
+o To select a preset, simply browse the list and click on the name of a desired preset.
+o You can reverse the order (from A to Z or from Z to A) by clicking on the column
+title: an ascendant or descendant arrow shows you the order type.
+Inverse the order of the instrument types
+6.4.4 The COMPASS morphing interface
+The Morphing page is an independent module allowing you to quickly create some new
+sounds thanks to a real time morphing feature between the four selected presets saved
+on the snapshot memories.
+The four presets are placed on the four cardinal points of the compass.
+The Morphing interface
+o To open the Morphing page, click on the COMPASS button, located on the toolbar of
+the Sound map.
+ARTURIA – JUPITER-8V – USER’S MANUAL 67
+To create a new morphed sound from these presets:
+o Click anywhere on the centre of the compass area (four red arrows appear
+converging to the location).
+o Hold the left button of your mouse and drag the convergence point until you have
+found the right sound. The green arrow shows you the starting point of your
+motion.
+Create a new sound
+o If you wish, you can save it on a User bank of the Jupiter-8V 2.5 memory.
+68 ARTURIA – JUPITER-8V – USER’S MANUAL
+7 THE DIFFERENT MODULES
+The interface of the Jupiter-8V consists of four main parts:
+• The interface of the original Jupiter-8V
+• The “PRESET MANAGER” offers a dedicated interface to manage the presets
+• The “EXPANDED PARAMETERS” part offers a selection of real-time controllers
+(“GALAXY” “SEQUENCER” and “KEYBOARD”), as well as access to the modulation
+options available for the synthesis and effects parts of the Jupiter-8V
+• The effect section (“EFFECTS”)
+These four parts are accessible by clicking on the tabs situated above the synthesis part
+of the interface.
+7.1 THE ORIGINAL JUPITER-8
+The “Jupiter-8V 2.5” interface takes on all the original parameters and characteristics of
+the synthesizer it is based on. Likewise, the 40 factory presets of the original machine
+are included (these can not be deleted).
+The Jupiter-8V
+The Jupiter-8V consists of:
+• 2 oscillators (« VCO 1 and 2 «) in which the second can equally be used as a
+source of modulation
+• 1 mixer for the volume of the 2 oscillators.
+• 1 High pass filter (« HPF «) 6dB/oct non-resonant
+• 1 low pass resonant filter (« VCF «) 12/24dB/oct
+• 1 amplifier
+• 2 envelopes dedicated to filter and amplitude modulations
+ARTURIA – JUPITER-8V – USER’S MANUAL 69
+• 1 LFO (low frequency oscillator)
+• 1 modulation section (WHEEL MOD) dedicated to the LFO
+7.1.1 The oscillators (“VCO 1 and 2”)
+There are two oscillators.
+The oscillator controls the basic frequencies and timbres of the Jupiter-8V with the
+frequency settings, choice of waveform, and the pulse width associated to the square
+waveform. These settings are made either with various knobs (static settings) or by the
+means of the modulation sections. These can be activated in the “LFO-MODULATION”
+section (monophonic modulation by the LFO) or the “CROSS MOD” (polyphonic
+modulation using the frequency of oscillator 2 on oscillator 1).
+The oscillators can be tuned and edited separately. They allow selecting one of four
+waveforms on each oscillator. The two oscillators have some different waveforms. (E.g.
+OSC1: triangle, square / OSC2: white noise, Sine) These waveforms can be used
+simultaneously. Whether tuned separately or when using several mixed waveforms, the
+two oscillators allow you to quickly obtain a rich variety of sounds.
+Two Oscillators
+7.1.1.1 VCO 1
+RANGE Switch the frequency range for VCO 1 («RANGE»), between one of
+four octaves 16', 8', 4', 2'. (The unities are indicated in feet, referring
+to the sizes of the pipes of church organs)
+WAVE Switch for the four waveforms:
+• Triangle
+• Saw Tooth
+• Variable Pulse
+• Square
+CROSS MOD Knob to set the frequency rate of modulation between the frequencies
+of VCO 2 towards the frequencies of VCO 1
+7.1.1.2 VCO 2
+RANGE Switch the frequency range for VCO 2 («RANGE»), choose between
+four octaves 16', 8', 4', 2'
+LOW FREQ Switch for the «FREQ /NORMAL» (low frequencies / audible
+frequencies), of VCO 2, of which the oscillation frequency is lower,
+and enables you to use it as an LFO to modulate the frequency of the
+VCO1.
+70 ARTURIA – JUPITER-8V – USER’S MANUAL
+FINE TUNE Knob to fine tune pitch with the range of plus or minus one half tone.
+SHAPE • Switch for the four waveforms:
+• Sine
+• Saw Tooth
+• Variable Pulse
+• White noise
+The white noise waveform brings an interesting complement to the sonic possibilities.
+It is very useful to create breath effects (flute tones for example) or special effects like
+the sound of wind for example.
+SYNC The synchronization between oscillators allows you to create very
+complex waveforms and overtones. When oscillator 2 is synchronized
+with oscillator 1, oscillator 2 will restart a new period every time the
+first oscillator completes its period, even if oscillator2 has not fully
+completed its current cycle (this signifies that it is not tuned to the
+same tonality!)
+Here are some of the representations of the different waveforms used by the oscillators
+of the Jupiter-8V:
+Saw tooth
+Square
+ARTURIA – JUPITER-8V – USER’S MANUAL 71
+Triangle
+Sine
+7.1.2 The mixer (“VCO1 / VCO2”)
+The mixer allows regulating the volume of the mix between oscillators 1 and 2.
+VCO 1 Knob to set the volume for Oscillator1 (LEFT)
+VCO 2 Knob to set the volume for oscillator 2 (RIGHT)
+VCO 1/2 Knob to set the volume for both oscillators (CENTERED)
+The mixer
+7.1.3 The filter (“VCF”)
+The Jupiter-8V has a filter that is an emulation of the original Jupiter 8 filter. It is made
+up of two independent filter units:
+72 ARTURIA – JUPITER-8V – USER’S MANUAL
+7.1.3.1 A non-resonant 6 dB/octave high-pass filter
+The high-pass filter eliminates the frequencies while letting high frequencies go through.
+The sound will become thinner. It is very useful to remove bass frequencies of a pad
+sound for example.
+The non-resonant high pass filter
+CUTOFF FREQ Knob to set of the cut off frequency of the filter
+Non-resonant high-pass filter
+7.1.3.2 A resonant 12 or 24 dB/Octave low-pass filter
+The low-pass filter is characteristic of the Jupiter-8V’s sound. It eliminates the
+frequencies situated above the frequency setting (the cut off frequency).
+The resonance amplifies the frequencies near the cutoff frequency. Turn this knob toward
+the right, and the filter will become more selective. At extreme settings, the sound will
+eventually begin to “whistle” as the filter begins to self-oscillate.
+Note that the filtering will be less strong with the filter type set on 12 dB instead of 24
+dB.
+ For hosts that allow “linear” control of knobs and sliders, right-click the mouse or [Command]+lick on Mac
+for additional precision. This is useful when trying to regulate the level of the cut off frequency precisely, for
+example. When in “circular” control mode, simply click on the knob and drag the mouse pointer out into a
+broader arc for a more precise setting.
+ARTURIA – JUPITER-8V – USER’S MANUAL 73
+Resonant low-pass filter
+CUTOFF FREQ Knob to set of the cut off frequency of the filter, From 10 Hz to 25
+KHz.
+RES Knob to set the resonance of the filter.
+SLOPE Switch the filtering slope 12 or 24 dB/ octave.
+ENV. AMT Knob to manually set the rate of filter modulation by the ADSR
+envelope.
+ENV1 / ENV 2 Switch to choose whether the modulation source for the cutoff is
+envelope 1 or envelope 2.
+LFO MOD Knob to set the level of modulation by the LFO (use this parameter to
+make a wah-wah effect).
+KEY FOLLOW Knob to manually set the keyboard follow.
+ For a conventional setting of the keyboard follow, place the knob in the middle (value 1.00).
+The cutoff frequency of the filter can be modulated by one of the two ADSR envelopes
+(see the following chapter). It can also be modulated by the LFO.
+The VCF
+7.1.4 The Amplifier (“VCA”)
+The amplifier is the last step in controlling the sound. It allows setting the general
+volume of the Jupiter-8V.
+74 ARTURIA – JUPITER-8V – USER’S MANUAL
+The amplifier (VCA)
+This module is very simple, it consists of:
+VOLUME Knob to set the volume of the synthesizer
+LFO MOD Slider to set the intensity level of the modulation by the LFO.
+The amplifier’s volume is directly affected by envelope 2 (ADSR2).
+7.1.5 The ADSR Envelopes
+The «ADSR« envelopes allow several parameters to be controlled with the help of the
+keyboard as a trigger. You will find two envelopes on the Jupiter-8: one unit for the
+cutoff frequency of the filter (as well as the frequency of VCO2) and another one to
+modulate the VCA amplitude.
+When playing the keyboard, the envelopes will trigger and modify the way to sound will
+be heard.
+The ADSR envelope of the filter
+The ADSR envelope consists of 4 different parameters:
+ATTACK The Attack is the time that the sound will take to reach its maximum
+volume once we have pressed a key on the keyboard.
+DECAY The Decay is the time that the sound will take to diminish after the
+attack portion is complete.
+SUSTAIN The Sustain is the maximum volume level that the sound will reach
+after the decay is complete.
+RELEASE The Release is the time that the sound will take to diminish once the
+key has been released.
+KEYFLW Switch to connect envelope 1 and/or 2 to the keyboard follow. When
+the switch is “ON”, the envelope times – “A”, “D” and “R” – will be as
+shorter as you will play the higher notes on your MIDI keyboard.
+ARTURIA – JUPITER-8V – USER’S MANUAL 75
+POLARITY Switch to set the polarity for envelope1:
+• If the switch is on the top, the envelope polarity is positive (this is
+the more common way to use an envelope).
+• If the switch is on the bottom, the polarity is negative. The
+envelope’s time settings are reversed: the shorter times will be
+heard when the faders are on their higher positions.
+This type of polarity is very nice to create some inverted effects.
+Take a look on the preset “Original JP-8 Preset / EFX /JP8_66_Fact” to hear an example of this special effect.
+7.1.6 The LFO
+Using the LFO as a modulation source is very common. It can be used to create a vibrato
+effect (when the LFO modulates the frequency of an oscillator) or a “wah-wah” effect
+(when it modulates the cutoff frequency of the filter).
+RATE Knob to set the speed of the LFO
+DELAY TIME Knob to set the delay time before the LFO becomes active
+WAVEFORM Switch the LFO’s waveform:
+• Sine
+• Saw tooth
+• Square
+• Random
+The LFO
+7.1.7 The VCO modulator
+The VCO modulator section allows adding modulations to both of the oscillators’
+frequencies (for vibrato or automatic pitch bending effects) and on the pulse width of
+their waveforms.
+Frequency modulation
+LFO Slider to set the level of modulation from LFO on the VCO frequencies.
+ENV1 Slider to set the level of modulation from Envelope 1 on the VCO
+frequencies.
+VCO 1
+VCO 2
+Selector to choose either oscillator 1, oscillator 2 or both oscillators as
+destinations for LFO / ENV modulation.
+PWM Slider to set the level of modulation on the VCOs’ pulse width.
+76 ARTURIA – JUPITER-8V – USER’S MANUAL
+LFO
+M
+ENV1
+Selector to choose either a manual setting (via the fader), LFO or
+envelope 1 as a source for the pulse width modulation.
+The VCO modulator section
+7.1.8 The LFO MODULATION, PORTAMENTO and BEND section
+The “LFO MOD” section shows the parameters that can be modulated by the LFO. There
+is a white button to activate the LFO. When it is pressed, the modulation is activated.
+When it is raised, the modulation stops.
+LFO MOD RISE Knob to set the triggering time of the LFO.
+LFO MOD Chooses the destinations that can be modulated by the LFO:
+• ON / OFF switch (« VCO «)
+• ON / OFF switch (« VCF «)
+VCO level Slider to set the level of modulation from the LFO to the VCO
+VCF level Slider to set the level of modulation from LFO to the VCF
+BEND Selectors of the destinations that can be modulated by the PITCH
+BEND
+• ON / OFF switch (« VCO 1»)
+• ON / OFF switch (« VCO 2»)
+• ON / OFF switch (« VCF «)
+VCO level Slider to set the intensity of the BEND modulation affecting the VCO
+(From 0 To +24 semi-tones / – 24 semi-tones).
+VCF level Slider to set the intensity level of the BEND modulation affecting the
+VCF.
+BENDER Pitch bender (movement towards the left: the tuning is diminished;
+movement towards the right, the tuning of the oscillators is
+increased)
+PORTAMENTO
+level
+Slider to set the level of portamento.
+PORTAMENTO
+select
+Switch to use the portamento:
+• Connection Section UPPER (« UPPER ONLY»)
+• Connection PORTAMENTO OFF
+• Connection Sections LOWER et UPPER (« ON «)
+ARTURIA – JUPITER-8V – USER’S MANUAL 77
+Destination connections
+7.1.9 The pitch bend wheel and LFO MOD button
+The pitch bend wheel and the push button for the amount of modulation by the LFO
+(« MOD «) are situated to the left side of the virtual keyboard.
+PITCH This wheel controls the pitch bend of the two oscillators
+LFO MO Push Button to control LFO modulation
+The Pitch Bend wheel and the LFO mod button
+7.1.10 The Master Tune section
+Among these parameters you will find: the general tuning of the Jupiter-8V 2.5, the
+detune option for the voices and a 440 Hz tone to tune the Jupiter-8V 2.5.
+TUNE Knob to set the general tuning of the synthesizer (+/- one semitone).
+DETUNE Set the amount of detune of the polyphonic voices.
+ The detune knob of the polyphonic voices is very useful to make out-of-tune sounds in
+the “unison” mode. It will sound a little like the effect of a chorus. When the «Unison» is not
+active, this parameter brings a little more instability to the tuning of the oscillators, a typical
+characteristic of the original machine.
+The Master Tune parameters
+78 ARTURIA – JUPITER-8V – USER’S MANUAL
+7.1.11The arpeggiator (“ARPEGGIO”)
+This section shows the connections that are necessary to make the arpeggiator work. It
+allows performance of patterns of notes in a particular order, evolving according to the
+notes played.
+• In SPLIT mode, the arpeggiator only works with the lower part of the keyboard.
+• In DUAL MODE, the arpeggiator works on both parts of the keyboard.
+The pattern development is possible to control with two parameters:
+RANGE Choose the range of the arpeggiator 1-4(in octaves):
+• One octave (button ON/OFF “1”)
+• Two octaves (button ON/OFF “2”)
+• Three octaves (button ON/OFF “3”)
+• Four octaves (button ON/OFF “4”)
+MODE Choose the playing mode:
+• UP (button ON/OFF)
+• Down (button ON/OFF)
+• Up and Down (button ON/OFF)
+• Random (button ON/OFF)
+The rate of the arpeggiator can be set on the left side of the LFO section (next to the
+general volume and LOWER / UPPER balance potentiometers).
+In the same area, you can also affect the MIDI synchronization for the arpeggiator rate
+(“EXT” position).
+The arpeggiator section
+The arpeggiator rate section
+7.1.12 The keyboard assign section (“ASSIGN MODE”)
+This section allows selecting the play modes as follow:
+ARTURIA – JUPITER-8V – USER’S MANUAL 79
+SOLO Button for selecting the monophonic mode.
+UNISON Button for selecting the Unison mode. When “UNISON” is activated, all
+the voices are regrouped to be played by one note of the keyboard. The
+result is a rich harmonic sound. It sounds similar to a chorus effect. When
+the Unison mode is activated the patch is still polyphonic (the amount of
+polyphony depends on the number of voices available)
+POLY 1 The most natural polyphonic playing mode. The envelopes are not
+reinitialized by each note played.
+POLY 2 Polyphonic playing mode reinitializing the envelopes with each note
+played. The « release » time is cut by the next note played.
+HOLD LOW This mode allows holding the played notes on the LOWER part. (This
+effect is similar to a sustain pedal action).
+HOLD UP This mode allows holding the played notes on the UPPER part.
+In SPLIT mode, the HOLD function can be assigned to both the LOWER and UPPER parts
+independently.
+In DUAL and WHOLE modes, the HOLD function simultaneously affects both parts.
+Only the volume envelope will be used by the hold function. That allows you to bring life to the sound while
+keeping the envelope free for the filter.
+Play mode section
+7.1.13 The play modes selection (“KEY MODE”)
+The methods of playing indicate the distribution of the programs on the keyboard. They
+are 3 selectable configurations that can be set to: “ON/OFF”:
+DUAL Two selected programs on the LOWER and UPPER part can be played
+simultaneously on the keyboard. The polyphony is then divided by two.
+SPLIT Two selected programs are assigned the LOWER and UPPER part of the
+keyboard. The polyphony is then divided between the two selected
+programs.
+WHOLE A single program is assigned to the entire keyboard range.
+Key modes
+80 ARTURIA – JUPITER-8V – USER’S MANUAL
+7.2 STEP SEQUENCER
+The sequencer is a 32-step sequencer.
+It allows the creation of several melodic lines (when one of the three available
+modulations is affecting the pitch of the VCO) as well as creation of dynamic modulations
+of other parameters such as the cutoff frequency of the VCF or the width of the VCO
+square waveform.
+Click on the “Modulations” tab, then, click on the “Sequencer” button to bring up the
+interface.
+The step sequencer
+The interface of the sequencer consists of three main parts:
+7.2.1 The transport
+The transport is on the left side of the sequencer. It consists of the necessary parameters
+to play and stop the sequence, MIDI synchronization, quantification and trigger (“trigg”)
+parameters:
+START
+STOP
+Selection screen to control the sequencer’s playing mode:
+• Note On/ Note OFF: Start / Stop with a note ON / OFF message.
+• MIDI Start / Stop : Start / Stop the sequencer with a MIDI sequencer
+(or a drum machine for instance)
+• Free running: Start / Stop the sequencer with the Start/Stop buttons
+of the step sequencer.
+START
+STOP
+buttons
+Start / Stop the sequencer, in “free running” mode only
+RATE Set the speed of the sequencer, in “free running” mode only
+SYNC
+ON/OFF
+Synchronization to an external MIDI clock
+Q Subdivision of MIDI tempo to adjust the speed of the sequencer in “MIDI
+Sync” mode:
+1/2 ;1/4 ;1/4T ;1/8 ;1/8T ;1/16 ;1/16T ;1/32 ;1/32T ;1/64 ;1/128
+ARTURIA – JUPITER-8V – USER’S MANUAL 81
+Mode Playing modes of the sequencer:
+• FORWARD: Playing the sequence forward
+• BACKWARD: Playing the sequence backward
+• FORWD/ BACKWD: Playing the sequence forward and backward
+• RANDOM: Playing the sequence randomly
+SMOOTH Amount of interpolation between values of each step in a sequence.
+SWING Automatically bring a ternary quantification to the sequence. This
+parameter will be very useful to add “groove” to a sequence for hip hop
+music, for example.
+ACCENT Bring an additional modulation to the selected step thanks to an “Attack” /
+“Decay” envelope applied to the cutoff frequency of the VCF low pass
+filter. This unit is comparable to the one that is located on the very
+famous TB303. The possibility to edit the attack time was added to the
+original unit to allow more flexibility.
+• A: Attack time of the accent envelope
+• D: Decay time of the accent envelope
+• LEVEL: Knob that controls the modulation amount of the accent to the
+low pass VCF Filter.
+The transport section
+7.2.2 Edit the sequence
+The editable part of the sequencer is located in the center of the sequencer's interface.
+Edit tools Five tools are available for editing the sequence:
+• Pencil: drawing of the values of the steps
+• Line: drawing of the values of the steps in line
+• Eraser: Delete certain values and settings
+• Noise: Automatically create a sequence
+• Reset: Reset the sequencer
+STEPS The steps. They contain bi-directional values (positive or negative).
+LENGTH To set the length of the sequence, 32 steps maximum.
+LINK Link the selected step with the following step, « Legato »).
+82 ARTURIA – JUPITER-8V – USER’S MANUAL
+GLIDE Place an effect of portamento between the selected step and the following
+step.
+ACCENT Place an accent effect on the selected step.
+The edit section of the sequencer
+7.2.3 Outputs
+The modulation destination (“OUTPUT”) is located to right of the interface of the
+sequencer, where the synthesis parameters that will be affected by the sequencer are
+selected.
+It is also possible to connect the parameters of the voice effects to the sequencer. To do that, go to the
+“Effects” / “Voice Effects” page. Then choose the source “Sequencer” among the choices of sources of proposed
+modulations for the parameters of these effects. (see paragraph “Voice Effects” for more details)
+Three connection locations are available for the sequencer. For each of them the
+following destinations are available:
+DESTINATION Choice of available modulation destinations
+• None: Nothing is connected
+• VCO1 Pitch: VCO1 FREQUENCY
+• VCO2 Pitch: VCO2 FREQUENCY
+• VCO1 PW: Pulse width of the square wave form of VCO1
+• VCO2 PW: Pulse width of the square wave form of VCO2
+• HPF Cutoff: Frequency of the high pass filter
+• VCF Cutoff: Frequency of the low pass filter
+• VCF Res: Resonance of the low pass filter
+• VCA: Volume of the VCA
+AMOUNT Sets the level of modulation
+Q Quantification of the modulation settings by semitones. This parameter
+is essential to regulate the levels of each step for the creation of a
+melodic sequence
+RETRIG Automatically place a «trig» envelope on all the steps.
+ARTURIA – JUPITER-8V – USER’S MANUAL 83
+The connection section
+7.3 GALAXY
+The galaxy module creates very complex modulations with the interaction of 3 LFOs.
+The first 2 LFOs can each modulate a different parameter on the X/Y axes, represented in
+the framework of the interface. A third LFO allows modifying the alpha angle between the
+X and Y axes.
+Each of these 3 LFOs have two parameters:
+SHAPE Selection screen for the waveform of the LFO and X/Y axis (“Sine”, “Tri”,
+“Saw” and “Square”) and “Sine”, “Tri” and “Saw” for the third LFO.
+RATE Knob to set the modulation frequency of the LFO.
+ANGLE Knob to set the rotation angle of the X/Y axis manually.
+Three modulation outputs can be connected. For each, the following modulation
+destinations are available:
+• “None”: Nothing is connected
+• “VCO1 Pitch” VCO1 FREQUENCY
+• “VCO2 Pitch”: VCO2 FREQUENCY
+• “VCO1 PW”: Pulse width of the square wave form of VCO1
+• “VCO2 PW”: Pulse width of the square wave form of VCO2
+• “HPF Cutoff”: Frequency of the high pass filter
+• “VCF Cutoff”: Frequency of the low pass filter
+• “VCF Res”: Resonance of the low pass filter
+• “VCA”: Volume of the VCA
+A reset setting of the movements for the three LFO's by a played note is available by
+using the “RETRIG” button.
+84 ARTURIA – JUPITER-8V – USER’S MANUAL
+The Galaxy module
+7.4 VOICE EFFECTS
+The Jupiter-8V offers two connections of “Voice” effects. These connections can be made
+inside the synthesis chain, between the VCO and the VCF and between the VCF and the
+VCA.
+These effects can be modulated by sources of modulation such as the LFO or the
+envelopes. These combinations of effects and of modulations will bring an additional
+dimension to the original sound of the Jupiter-8.
+Connections of the voice effects
+The effects are accessible when you click on the “EFFECTS” tab, situated on the LCD
+screen, on the right part of the Jupiter-8V 2.5. They will be activated or deactivated
+when you click on the “EFFECT” button, situated on the toolbar.
+7.4.1 Chorus /Flanger
+This monophonic Chorus/Flanger module adds a comb filtering aspect to the sound.
+RATE Knob to set the frequency of the chorus
+DEPTH Knob to set the depth of the modulation
+FEEDBACK Knob to set the feedback of the modulation. (to achieve more of a flanged
+effect)
+AMOUNT Knob to set the depth of the modulation
+DRY/WET Knob to set the balance between the original signal and the output of the
+effect
+OUTPUT Knob to set the output volume of the chorus
+The “MOD” display allows accessing the modulation connections of each of the
+parameters of the chorus as well as the choice of the sources of modulation:
+ARTURIA – JUPITER-8V – USER’S MANUAL 85
+• KEY FOLLOW
+• VELOCITY
+• AFTERTOUCH
+• ENVELOPE 1
+• ENVELOPE 2
+• GALAXY Y
+• GALAXY X
+• LFO
+• SEQUENCER
+The “BYPASS” button deactivates the Chorus / Flanger effect.
+The Chorus/Flanger
+7.4.2 Distortion
+The distortion unit brings a soft or strong saturation to the sound, on the output of the
+VCO or VCF.
+Three modes of distortion are available:
+Soft Soft distortion comparable to setting an analog amplifier to the maximum
+volume.
+Hard Extreme distortion ideal for destructive lead sounds!
+DRY/WET Knob to set the balance between the original signal and the output of the
+effect.
+DRIVE Sets the distortion amount.
+SYMMETRY Set the symmetry of the out-going signal.
+OUTPUT Knob to set the output volume of the distortion.
+The LCD screen allows to graphically show the distortion curve.
+The “MOD” display allows accessing the modulation connections for each of the
+parameters of the distortion as well as the choice of the sources of modulation:
+• KEY FOLLOW
+• VELOCITY
+• AFTERTOUCH
+86 ARTURIA – JUPITER-8V – USER’S MANUAL
+• ENVELOPE 1
+• ENVELOPE 2
+• GALAXY Y
+• GALAXY X
+• LFO
+• SEQUENCER
+The “BYPASS” button deactivates the distortion effect.
+Distortion
+7.4.3 Parametric EQ
+This equalizer unit adjusts the harmonic content of the sound with four bands of
+frequency control.
+Bands 1 and 4 (low and high) are semi-parametric; bands 2 and 3 (mid) are fully
+parametric.
+Each of the parameters of the equalizer can be modulated by sources of modulation. This
+allows you to create effects that sweep frequencies, resulting in a complex «phasing« or
+filtering effect.
+BAND 1 (bass frequencies)
+FREQUENCY (F) Knob to set the band of the bass frequencies
+GAIN (G) Knob to set the gain of the bass frequency band
+BAND 2 (Mid-low frequencies)
+FREQUENCY (F) Knob to set the band of the mid-low frequencies
+GAIN (G) Knob to set the gain for the band of the mid-low frequencies
+BAND WIDTH (Q) The setting of the band width of the mid-low frequencies
+BAND 3 (Mid-high frequencies)
+FREQUENCY (F) Knob to set the band of the mid-high frequencies
+GAIN (G) Knob to set the gain for the band of the mid-high frequencies
+BAND WIDTH (Q) The setting of the band width of the mid-high frequencies
+ARTURIA – JUPITER-8V – USER’S MANUAL 87
+BAND 4 (High frequencies)
+FREQUENCY (F) Knob to set the band of the high frequencies
+GAIN (G) Knob to set the gain for the band of the high frequencies
+DRY/WET Knob to set the balance between the original signal and the output
+of the effect
+OUTPUT Knob for the PARAM EQ‘s output volume.
+The LCD screen allows you to graphically show the positions of each band.
+The “MOD” button allows accessing the modulation connections for each of the
+parameters of the PARAM EQ as well as the choice of the sources of modulation:
+• KEY FOLLOW
+• VELOCITY
+• AFTERTOUCH
+• ENVELOPE 1
+• ENVELOPE 2
+• GALAXY Y
+• GALAXY X
+• LFO
+• SEQUENCER
+The “BYPASS” button allows deactivating the parametric equalizer effect.
+Parametric EQ
+7.4.4 Phaser
+The PHASER effect provides a classic phasing sound similar to analog effects used in the
+70's.
+SWEEP START Knob to set the reference frequency
+FEEDBACK Knob to set the feedback of the modulated signal
+SWEEP AMOUNT Knob to set the amplitude of the modulation
+SWEEP RATE Knob to set the speed of the modulation
+DRY/WET Knob to set the balance between the original signal and the output of
+the effect
+88 ARTURIA – JUPITER-8V – USER’S MANUAL
+OUTPUT Knob for the volume of the output of the phaser.
+The “MOD” display allows accessing the modulation connections for each of the
+parameters of the PHASER as well as the choice of the sources of modulation:
+• KEY FOLLOW
+• VELOCITY
+• AFTERTOUCH
+• ENVELOPE 1
+• ENVELOPE 2
+• GALAXY Y
+• GALAXY X
+• LFO
+• SEQUENCER
+The “BYPASS” button allows deactivating the PHASER effect.
+Phaser
+7.4.5 Ring Mod
+The RING MODULATOR allows adding metallic effects to the sound with modulation of the
+output of the VCO or filter VCF.
+MOD FREQ Knob to set the speed of the modulation
+MOD AMOUT Knob to set the amplitude of the modulation
+DRY/WET Knob to set the balance between the original signal and the output of
+the effect
+OUTPUT Knob for the volume of the output of the ring modulator.
+The “MOD” display allows accessing the modulation connections for each of the
+parameters of the RING MOD as well as the choice of the sources of modulation:
+• KEY FOLLOW
+• VELOCITY
+• AFTERTOUCH
+• ENVELOPE 1
+ARTURIA – JUPITER-8V – USER’S MANUAL 89
+• ENVELOPE 2
+• GALAXY Y
+• GALAXY X
+• LFO
+• SEQUENCER
+The “BYPASS” button allows deactivating the RING MOD effect.
+Ring Mod
+7.5 PATCH EFFECTS
+Two “PATCH” effect modules are available on the end of the synthesis chain. The two
+modules are placed after the output of the VCA, and cannot receive external
+modulations.
+Patch effect connections
+7.5.1 Chorus/Flanger
+The stereo Chorus/Flanger module adds thickness and width to the sound. This effect is
+often used to create string pads for example (the “Ensemble” effect of old analog
+synthesizers)
+RATE Knob to set the frequency of the chorus
+DEPTH Knob to set the depth of the modulation
+FEEDBACK Knob to set the feedback of the modulation, to achieve more of a flanged
+effect
+AMOUNT Knob to set the depth of the modulation
+DRY/WET Knob to set the balance between the original signal and the output of the
+effect
+OUTPUT Knob to set the output volume of the chorus
+90 ARTURIA – JUPITER-8V – USER’S MANUAL
+The “BYPASS” button allows deactivating the “CHORUS/ FLANGER” effect.
+Chorus / Flanger
+7.5.2 Stereo Analog Delay
+The delay effect allows creating echo effects or doubling in the sound. This effect is used
+on all types of sounds to add stereo space.
+This effect recreates the characteristics of the analog delays of the 70's, which are very
+popular today for their unique sound (the famous “tape delays”).
+RIGHT TIME Knob to set the time for the right channel
+LEFT TIME Knob to set the time for the left channel
+FEEDBACK RIGHT Knob to set the feedback for the right channel
+FEEDBACK LEFT Knob to set the feedback for the left channel
+CROSS FEEDK R Knob to set the feedback of the right channel towards the left
+channel
+CROSS FEEDK L Knob to set the feedback of the left channel towards the right
+channel
+DAMPING Knob to set the amount of high frequencies that are rolled off with
+each repetition
+DRY/WET Knob to set the balance between the original signal and the output
+of the effect
+OUTPUT Knob to set the output volume of the delay
+The “BYPASS” button allows deactivating the delay effect
+The “SYNC” button allows synchronize the delay to MIDI
+The “LINK” button allows linking of the left and right channel of the delay.
+Stereo Delay
+ARTURIA – JUPITER-8V – USER’S MANUAL 91
+7.5.3 Reverb
+The reverb effect creates a very dense series of decaying echoes in the sound, simulating
+the sound's performance within a three-dimensional space.
+FEEDBACK Knob to set feedback time for the reverb
+DAMPING Knob to set the rate at which high frequencies that are rolled off as the
+reverb decays
+DRY/WET Knob to set the balance between the original signal and the output of the
+effect
+OUTPUT Knob to set the output volume of the reverb
+A visual interface shows the characteristics of the REVERB for convenient editing.
+The “BYPASS” button allows deactivating the “REVERB” effect.
+The Reverb effect
+7.5.4 Dual Phaser
+The Phaser unit provides a classic phasing sound similar to analog effects used in the
+70's.
+SWEEP
+GENERATOR
+1/2
+Selection of the waveforms for the modulations of phasers 1 and 2:
+• Sin
+• Square
+• Saw
+• Triangle
+RATE 1/2 Knob to set the rate for Phaser 1 /2
+DEPTH 1/2 Knob to set the depth of the modulation for Phaser 1/2
+FEEDBACK 1/2 Knob to set feedback time for Phaser 1/2
+DRY/WET Knob to set the balance between the original signal and the output of
+the effect
+OUTPUT Knob to set the output volume of the DUAL PHASER
+SWEEP SYNC Button allows activating the synchronization of the two modulation
+frequencies.
+INVERT Button allows inverting the phase of the modulation frequencies
+BYPASS Button allows deactivating the “DUAL PHASER” effect.
+92 ARTURIA – JUPITER-8V – USER’S MANUAL
+Dual Phaser
+ARTURIA – JUPITER-8V – USER’S MANUAL 93
+8 THE BASICS OF SUBTRACTIVE SYNTHESIS
+Subtractive synthesis appeared at the end of the 1960’s, giving birth to the first analog
+synthesizers: Moog, ARP, EMS, Oberheim, Roland (SH, Juno or Jupiter series), Yamaha
+(CS series) and Korg (MS and PS series).
+Of all forms of audio synthesis, subtractive is one of the oldest, and to this day, the most
+frequently employed by sound designers and musicians alike. This is due to the simplicity
+with which complex sounds can be created, over the more difficult types of synthesis,
+many of which employ elements of subtractive synthesis as well, such as low-pass
+filtering. As a basic overview to subtractive synthesis, one may consider any sound
+created, either in real life or on the synthesizer of your choice, as consisting of a number
+of sine waves, or harmonics grouped together. In subtractive synthesis, we start with a
+harmonically rich sound such as a saw wave, and through filtering, we remove the sine
+waves (or harmonics) that we do not want. This as you can imagine is much more
+complex than turning a filter control knob!
+The Jupiter-8V you own shows some very good examples of the subtractive synthesis
+possibilities.
+8.1 THE MAIN ELEMENTS
+8.1.1 The Oscillator or VCO
+The oscillator or VCO (Voltage Controlled Oscillator) is the starting module (with the
+noise module which is often classed among the oscillators) for the creation of a sound on
+an analog system.
+It will generate the initial sound signal. We can think of the oscillator like a violin string
+that once stroked or plucked, vibrates to create its sound.
+Oscillator Section on the Jupiter 8
+The main oscillator settings are:
+The pitch determined by the oscillation frequency. You can set the frequency of the
+oscillator with 3 controllers:
+• The “RANGE” parameter allows setting the tuning of the oscillator by octave. Usually,
+on four octaves 16', 8', 4', 2'. (The unities are indicated in feet, referring to the sizes
+of the pipes of church organs). The Jupiter-8 also has a “LOW” range to set the
+oscillator2 to low frequencies.
+94 ARTURIA – JUPITER-8V – USER’S MANUAL
+• The tuning parameter (“COARSE” or “FREQUENCY”) allows you to tune the oscillator
+by semi-tones on a range of 5 octaves.
+• The fine tuning parameter (“FINE”) finely tunes the oscillator upwards or downwards
+by a semi-tone. This parameter gives a bit more life to your sound when you use
+several oscillators simultaneously, due to difference in frequencies between the
+oscillators.
+The waveform determines the harmonic richness of the audio signal. On the Jupiter-8V
+2.5, four waveforms are available:
+• The saw tooth wave presents the richest audio signal of the available waveforms (it
+contains all of the harmonics at decreasing volume levels in high frequencies). Its
+sound is ideal for brass sounds, percussive bass sounds or rich pad sounds.
+The Sawtooth waveform and its harmonic spectrum
+• The square wave possesses a more “hollow” sound than the saw tooth (it only
+contains odd harmonics) but none the less, its rich sound (notably in low frequencies)
+can be used for sub-bass sounds that will come out well in the mix (the square
+oscillator is often set an octave below that of the saw tooth), wood sounds (clarinet, if
+the square signal is a little filtered), etc.
+ARTURIA – JUPITER-8V – USER’S MANUAL 95
+The PWM (top) and the Square (bottom) waveforms and their respective harmonic spectrums
+• The PWM (Pulse Width Modulation) is a setting that allows you to modify the
+waveform cycle (or wave length). This can be done manually with the help of a knob
+“PW” or by modulation (with an envelope or LFO). Pulse width variation creates a
+spectrum modification that cannot be duplicated with subtractive filtering.
+• The triangle wave can be considered as a very filtered (and soft) square signal. It is
+very low in harmonics (odd only) and can be very useful for creating sub basses, flute
+sounds, etc.…
+The Triangle waveform and its harmonic spectrum
+• The sine wave is the purest waveform of all. It produces only a single harmonic,
+referred to as “the fundamental”. It can be used to reinforce the low frequencies of a
+bass sound or as a modulation of the frequency in order to create harmonic
+waveforms. This wave form is available on VCO2.
+96 ARTURIA – JUPITER-8V – USER’S MANUAL
+The Sinusoid waveform and its harmonic spectrum
+• The synchronization of an oscillator with another creates more complex waveforms.
+If for example, you synchronize oscillator2 with oscillator1, oscillator2 will restart a
+new period every time the first oscillator completes its period, even if oscillator2 has
+not fully completed its current cycle (this signifies that it is not tuned to the same
+tonality!) The more you tune oscillator2 upwards, the more you will encounter
+composite waveforms.
+In the image above, osc2 is synchronized with osc1 and tuned to with double the tonality.
+• Frequency modulation (FM or CROSS MOD in case of the Jupiter-8) can be created
+between 2 oscillators by connecting the audio output from a first oscillator to the
+modulation input of a second oscillator. On the Jupiter-8V, if you turn the CROSS
+MOD knob, you will obtain a sound that is richer in harmonics. If you introduce a
+square or sawtooth signal, the result can be quickly distorted… but interesting for
+enharmonic sonorities like bell sounds or special effects for example.
+ARTURIA – JUPITER-8V – USER’S MANUAL 97
+• The noise generator: the noise signal produces acoustic energy across a broad
+spectrum of frequencies with no discernible “fundamental” or harmonic signature. For
+this reason, the noise module is used to create different noises like the imitation of
+wind or special effects. White noise is the richest of noises. Pink noise is also regularly
+present on synthesizers. It is less rich in the high frequencies than white noise. In the
+Jupiter-8V section, you will find the noise generator as a selectable waveform on OSC
+2.
+8.1.2 The Mixer
+The audio signal generated by an oscillator (the waveform) is generally directed toward a
+filter module (Voltage Controlled Filter).
+With the mixer of the Jupiter-8V: you are able to set the volume between OSC1 and 2
+with the “Source Mix” knob. The mixer has no modulation input. Therefore this setting is
+to be done manually.
+The Mixer of Jupiter-8V
+8.1.3 The filter or VCF
+The audio signal generated by an oscillator (the waveform) is next generally directed to a
+filter module or VCF (Voltage Controlled Filter). It is this module that we use to
+control the sound by filtering (by removing or subtracting certain frequencies, which
+explains the name given to this type of synthesis) the harmonics situated around a cutoff frequency. It can be considered to be a sophisticated equalizer that reduces,
+depending on the filter type, a range of frequencies of a sound.
+The removal of undesirable frequencies at the cut-off frequency is not done suddenly but
+progressively, depending on the filtering slope. This filtering slope is expressed in
+98 ARTURIA – JUPITER-8V – USER’S MANUAL
+decibels per octave (or dB/oct). Most filters used in classic analog synthesizers have 24
+dB/oct or 12 dB/oct slopes.
+The removal of undesirable frequencies at the cut-off frequency
+On the Jupiter-8V, you have access to a type of filtering with a 24 dB/Oct slope and to a
+type of filtering with a 12 dB/Oct slope. Let’s have a look at some of its properties:
+8.1.3.1 High-Pass Filter (HP Filter)
+The high-pass filter acts symmetrically to that of the low pass filter. It eliminates
+frequencies below the cut-off frequency. The High-pass filter on the Jupiter-8 is non
+resonant.
+Non-resonant high-pass filter
+8.1.3.2 The low-pass filter (LPF)
+The low-pass filter (LPF) progressively removes high frequencies above the assigned
+frequency limit (the cut-off frequency) and allows the sound below the cut-off to pass
+through unchanged. Depending on the settings we will hear the sound becoming more or
+less “brilliant”, more or less “dampened”.
+This is the type of filtering that you will find most often on synthesizers that use
+subtractive synthesis. It can be found on most of the recent analog and digital
+synthesizers.
+ARTURIA – JUPITER-8V – USER’S MANUAL 99
+Resonant low-pass filter
+8.1.3.3 The resonance
+A second setting to compliment the cut-off frequency is the resonance (you will also find
+it called “emphasis” or “Q” (for Quality of filtering) elsewhere).
+The resonance is able to amplify frequencies close to the cut-off frequency. Then the
+other frequencies remaining are either unchanged (below the cut-off frequency) or
+reduced (above the cut-off frequency). Resonance will also cause the frequencies below
+cut-off to be reduced, which is one factor in the resonance sounding more pronounced.
+On the Jupiter-8 you can increase the resonance through the “RES” Slider.
+When you increase the resonance, the filter becomes more selective, the cut-off
+frequency is amplified, and the sound will begin to “ring” at higher settings.
+The resonance amplifies frequencies close to the cut-off frequency
+With a high resonance level, the filter itself will begin to produce a sound close to a sine
+waveform with no outside input, which is referred to as self-oscillation. At this stage, the
+use of a key follow is very important as you can create a melody by tuning the cut-off
+frequency of the filter with the frequency of the oscillators.
+100 ARTURIA – JUPITER-8V – USER’S MANUAL
+The filter settings of the Jupiter-8V
+8.1.4 The amplifier or VCA
+The amplifier (Voltage Controlled Amplifier) receives the audio signal coming from the
+filter (or directly from the oscillator if it is not being filtered) to be adjusted before the
+volume is sent to the speakers.
+Jupiter-8V VCA
+In conclusion, here is a diagram that should help you to understand the composition of a
+basic sound:
+8.2 OTHER MODULES
+8.2.1 The keyboard
+To start and stop the sound at a specific pitch, we most often use a keyboard that is
+connected to the ADSR through a gate and separately to the frequency control of the
+oscillators. This will “play” the sound as soon as a key is pressed and end it when
+released, as well as tune the oscillator to the selected key.
+ARTURIA – JUPITER-8V – USER’S MANUAL 101
+Secondarily, the keyboard's pitch is also used to modulate other sources, such as filter
+cutoff.
+ If you do not use a MIDI keyboard, you can also play on the virtual keyboard of the Jupiter-8V, but your
+MIDI sequencer will not record those actions, it is for auditioning presets and programming only.
+8.2.2 The envelope generator or ADSR
+If we stop here, the sound that you will obtain will be uniform, without life and without
+an end!! The oscillator delivers a sound signal (the audio output of a waveform) of a
+fixed pitch in a continuous manner. In the diagram above, the only way to control this
+sound is to lower the filter cut-off frequency so that it becomes more and more damp
+until it finally disappears; or simpler yet, lower the volume of the amplifier.
+The envelope generator, connected to the VCA, is used to «sculpt« the volume of the
+sound when we press a key on the keyboard and ends after the note is released.
+The most common modules developed use 4 settings that we can vary:
+• The Attack is the time that the sound will take to reach its maximum volume once
+we have pressed a key on the keyboard.
+• The Decay is the time that the sound will take to diminish after the attack portion
+is complete.
+• The Sustain is the maximum volume level that the sound will reach after the
+decay is complete.
+• The Release is the time that the sound will take to diminish once the key has been
+released.
+The ADSR Envelope
+102 ARTURIA – JUPITER-8V – USER’S MANUAL
+The envelope generator of the Jupiter-8V
+8.2.3 The low frequency oscillator
+The LFO (Low Frequency Oscillator – or LFO on the Jupiter-8V) possesses more or less
+the same characteristics of the classic oscillator but it only produces frequencies lower
+than 20 Hz. In other words, you won’t hear the pitch of its sound.
+It will create a cyclic modulation on the setting to which it is connected. For example:
+• If the sine waveform of an LFO modulates the volume of an amplifier, the sound
+will increase in volume then disappear in a varying manner following the speed
+(the frequency) of this LFO. This will produce a tremolo effect.
+• A sine waveform on an LFO modulating the frequency of an oscillator would
+produce a vibrato effect.
+• With an LFO sine wave modulating the cut-off frequency of a lightly resonant lowpass filter, you will obtain a “wah wah” effect.
+The LFO modulating an VCA volume for a tremolo effect
+ARTURIA – JUPITER-8V – USER’S MANUAL 103
+The LFO module of the Jupiter-8V
+ The Jupiter-8V allows you to use VCO2, placed at a low frequency (position «LOFREQ«), to modulate the
+frequency of VCO1.
+8.3 MODULES OF THE JUPITER-8V 2.5
+The essential elements of the Jupiter-8V 2.5 consist of:
+• 2 oscillators
+• 1 noise generator
+• 1 mixer
+• 2 filters (one high-pass without resonance, and one low-pass)
+• 1 output amplifier (VCA)
+• 2 ADSR envelopes
+• 1 LFO
+104 ARTURIA – JUPITER-8V – USER’S MANUAL
+9 SOME ELEMENTS OF SOUND DESIGN
+Here are five examples that can guide you when programming different tones on the
+Jupiter-8V. These tones are classified from simple to complex, and are organized in 3
+parts:
+• The first part will allow you to explore the basis of the subtractive synthesis with
+the Jupiter-8V 2.5. While starting off with a basic preset, you will make a
+polyphonic violin sound that is typical for this synthesizer. After that, you will
+approach the programming of a richer sound (complex modulations, cross
+modulation…) in the form of a bell tone.
+• The second part will allow you to explore the newly added functionalities of the
+Jupiter-8V. After this the «Galaxy« and «Step Sequencer« modules will not be a
+mystery anymore!
+• The third part will allow you to create a very rich and progressive tone thanks to
+the combination of the «voice« effects and numerous possibilities of modulations
+that have already been presented.
+9.1 A POLYPHONIC VIOLIN PRESET MADE WITH THE JUPITER- 8 V 2.5
+To begin, we will learn how to program a basic polyphonic sound. It will be simply
+composed of four elements:
+• Two oscillators (VCO1 and 2)
+• A high pass filter (HPF)
+• A low pass filter (VCF)
+• An ADSR envelope connected to the filter
+• An ADSR envelope connected to the amplifier
+• An LFO connected to the width of the “square” waveform of VCO2
+By doing this you will obtain a basic preset offering an overall tone of violins. Figure 1
+shows you the position of the different knobs.
+ To begin, choose the preset “UJ Brass« in the project «KUJIIE« / “Brass”. As you
+will notice, the sound is very basic and not very alive when you play a note. In fact,
+this very simple preset (continuous and brilliant) is our starting point for the sound
+design.
+Choose the preset « Default « of the project « Template «
+ On VCO 1, the “SAW” wave form is selected. This waveform is very rich in
+harmonics and will be perfectly suitable to create the violin sound.
+ Change the range of this oscillator (by octave). Click on the selector “Range” and
+place it on “16'”
+ARTURIA – JUPITER-8V – USER’S MANUAL 105
+Click on the “Range” selector of VCO1
+ Choose the modulated square waveform on VCO2
+Choose the modulated square waveform on VCO2
+ Set VCO 2 slightly out of tune by turning the “Fine Tune” knob a little bit. The sound
+will become more alive.
+Set VCO 2 slightly out of tune
+ Lower the cut off frequency of the filter («FREQUENCY«) by positioning the knob in
+the center (around «400 Hz«). That will allow you to return to a softer sound. You
+will hear the effect that the envelope will produce on the filter.
+Lower the cut off frequency of the filter
+ On the ADSR envelope situated to the right of the filter, increase the attack time to
+a value close to «100MS«. Lower the knob of the Decay (set it to a value around
+106 ARTURIA – JUPITER-8V – USER’S MANUAL
+200 ms) and, finally, lower the Sustain toward «0.0.600.000«. The maximum level
+of the cut off frequency is thus reduced.
+Increase the attack time
+ Increase the position of the «PWM« selector (for «Pulse Width Modulation«) to the
+center of its range. Place the situated switch to the right of the «PWM« selector on
+the position «LFO«. Now it is set to modulate the width of the square with the LFO.
+Increase the position of the «PWM« selector
+ Increase the position of the LFO «Rate« slider to a position around 3 Hz. The
+achieved effect will be comparable to a chorus effect.
+Increase the position of the LFO rate slider
+ At this stage, you can add a little «Stereo Delay« effect to your tone in order to
+make it sound wider.
+ Open the «Effects« page situated in the top panel of the Jupiter-8V 2.5.
+ In the first «Patch« slot (at the bottom of the connection diagram of the effects),
+choose the «ST Delay«.
+ Set the times («Time«) for each of the two sides of the stereo delay.
+ARTURIA – JUPITER-8V – USER’S MANUAL 107
+ You also can adjust the number of repetitions («feedback«) to your convenience.
+The Delay settings
+ Save the sound as « Violin 1«, you will then be able to use it later. Open the preset
+interface and click on the «Save as« button. Choose a new name («Strings« for
+example). Also give a new name to the project (for example your name), a new
+name for the new preset Program (for example «Strings together«) and give
+characteristics to this preset (for example «Strings« then «Bright« and «Simple«).
+Save the sound
+9.2 ARPEGGIATED SOUNDS
+Load the preset “JMB_Bass1” in the “JMB” project. We are going to use the galaxy
+module and the arpeggiator to modulate the sound.
+This preset will contain:
+• Two VCO’s
+• An high pass filter (HPF)
+• A low pass filter (VCF)
+• An ADSR envelope connected to the filter
+108 ARTURIA – JUPITER-8V – USER’S MANUAL
+• An ADSR envelope connected to the amplifier
+• The Galaxy module
+• The Arpeggiator
+• Voice effect « Chorus / Flanger «
+• Patch effect « St Reverb «
+• Patch effect « St Delay «
+ Increase the release time for the second ADSR envelope (for example to the range
+of 8000 ms) in order to give the impression of a harp tone.
+Increase the release time for the second ADSR envelope
+ Increase the cut off frequency of the high pass filter (to the range of 800 Hz)
+ Lower the resonance rate of the VCF almost to the minimum.
+ Activate the arpeggiator by clicking on the buttons «Range 2« and «Mode UDN«.
+Then play a chord on your MIDI keyboard. An arpeggio will be heard.
+Setting of the arpeggiator
+ If you work with a MIDI Sequencer and you wish to synchronize the arpegiator to the tempo of the
+sequencer, click on the switch «INT / EXT« situated next to the «Rate« fader of the arppegiator then place it
+toward the bottom into the position «EXT«
+ Click on the selector «Hold Up« if you wish to hold the arpeggio in play mode.
+Click on the « Hold Up « selector
+ARTURIA – JUPITER-8V – USER’S MANUAL 109
+We will use the Galaxy unit to modulate the width of the square wave form of the second
+VCO, the cut off frequency of the high pass filter and the low pass filter (VCF)
+ Open the «Modulations« page situated in the upper panel of the Jupiter-8V 2.5. the
+Galaxy unit is selected by default.
+Open the «Modulations« page
+ Choose the destination parameters of the modulations for LFO1 (Y output) and 2 (X
+output):
+LFO1  HPF Cutoff
+LFO2  VCF Cutoff
+ Set the depth of these modulations with the knobs situated next to these
+destinations. (Take values around “0.900« for the HPF «Cutoff« and «0.500« for the
+«VCF Cutoff«)
+Settings of the galaxy unit
+If you wish to give space to your sound, add chorus, reverb or delay effects. To do that,
+click on «Effects« situated in the upper panel of the Jupiter-8V 2.5.
+ In the first «Voice« effect slot (at the top of the connection diagram for the effects),
+choose «Chorus / Flanger«. This will be placed between the VCO and the filters.
+ Set the speed of the chorus frequency with the («Rate«) knob to your convenience
+ You also can adjust the numbers of repetitions («feedback«) to your convenience.
+ Set the «dry/wet« knob of the chorus in a manner to balance between the original
+and the effected sound.
+110 ARTURIA – JUPITER-8V – USER’S MANUAL
+Setting of the Chorus
+ In the first «Patch« effects slot (underneath the «Voice« effects on the connection
+diagram for the effects), choose «St FX Reverb«
+ Set the «Size« knob toward the right to lengthen the time of reverberation. (Take a
+value around “0.700«)
+ Set the «dry/wet« knob of the chorus in a manner to balance between the original
+and the effected sound.
+Setting of the « St FX Reverb«
+ In the second «Patch« effect slot, choose «St FX Delay«
+ Set the times of the different delay lines («Time«) for each of the two sides of the
+stereo delay so that they will be in sync with the arpeggiator.
+ If you work with a MIDI Sequencer and you wish to synchronize the arpeggiator to the tempo of the
+sequencer, click on the «Sync« button.
+ You also can adjust the numbers of repetitions («feedback«) to your convenience.
+Setting of the St fx Delay
+Now you can save your preset to be able to use it later.
+ARTURIA – JUPITER-8V – USER’S MANUAL 111
+9.3 A SEQUENCE WITH THE JUPITER-8V 2.5
+In this example, you will discover the basics of programming a sequence on the Jupiter8V 2.5. This can be done with the «32-step step sequencer«. This will be used together
+with Galaxy unit and the St Delay effect to create rich and complex rhythmic effects.
+Choose the preset «JMB_Sequenced Chords« in the project «JMB«. This sound uses
+VCO2 tuned to a dominant 7th and is very «brilliant«. This will be a starting point for our
+third preset.
+ Open the interface of the «Sequencer« situated in the upper panel of the Jupiter-8V
+2.5. Click on the «Sequencer« button.
+Open the interface of the «Sequencer«
+ Click on the first list «Output« (situated to right of the sequencer) and choose «VCF
+Cutoff«
+Choose «VCF Cutoff«
+ Increase the value of the intensity of this modulation while turning the knob to the
+right.
+Increase the amount of modulation
+112 ARTURIA – JUPITER-8V – USER’S MANUAL
+ Place the sequencer in MIDI SYNC mode by clicking on the button «Sync.« The
+synchronization to the MIDI tempo allows regulating the speed of the sequencer,
+Galaxy and St Delay precisely.
+ Select the speed of the sequencer by clicking on the list «Q« (for «Quantized«)
+choose the value “1/8«.
+Choose the value “1/8”
+ Select the number of steps that you wish to have in your sequence. Click on the left
+side of the bar situated on the top of the programming window. For example set it
+to 8 steps.
+Set it to 8 steps
+ Set the values of the different steps to your convenience while clicking on each of
+the vertical bars and pulling them up for positive values or down for negative
+values.
+Set the values of the different steps
+ Click on the tool to create different values randomly for each note. This way, you will quickly obtain
+rhythmic sequences that you can edit to your liking. .
+ARTURIA – JUPITER-8V – USER’S MANUAL 113
+The interface of the Jupiter-8V sequencer
+ Open the Galaxy module to complete the rhythm. This will modulate the volume of
+the VCA to create «gate« effects that are often used in electronic music.
+ Click on «Output X' (situated to right of galaxy) and choose «VCA« as destination of
+modulation controlled by LFO 1 (axis «X«).
+ Do the same for the first destination of the axis «Y« while choosing also the
+destination «VCA«
+ Set the two levels of modulation to the range of 0.600
+ Sync the Galaxy module to MIDI « Sync «
+ Select the speed of the LFO while clicking on « Q « (For « Quantized «) select a
+value « 1/8 «.
+Galaxy completes the sequence played by the step sequencer to finish your sound.
+Setting of the Galaxy module
+Finally the preset consists of:
+• 2 VCOs (VCO2 as a 7th tuning)
+• A high pass filter (HPF)
+• A low pass filter (VCF)
+• An ADSR envelope connected to the filter
+• An ADSR envelope connected to the amplifier
+• The Galaxy module
+• The Arpeggiator
+• The step sequencer modulating the frequency of the VCF
+• The Galaxy module modulating the volume of the VCA
+• A LFO modulating the square waveform of VCO2
+• Patch effect « Chorus / Flanger «
+114 ARTURIA – JUPITER-8V – USER’S MANUAL
+• Patch effect « St Delay «
+These sound examples present different levels of difficulty. We hope that they have
+allowed you to discover a part of the possibilities that the Jupiter-8V offers. But do not
+hesitate to do your own experimentations. This is the fastest way to master the Jupiter8V and create original sounds.
+ARTURIA – JUPITER-8V – USER’S MANUAL 115
+10MODES OF OPERATION
+10.1 STAND-ALONE
+The Stand-Alone application allows the use of the Jupiter-8V outside of any host
+application. You can open one or several instruments, and play directly with the help of a
+master MIDI keyboard or external sequencer on a separate computer.
+10.1.1Launching the Stand-alone application
+To launch the Stand-alone application on your PC, go into the Start menu > Programs >
+Arturia > Jupiter-8V2 and choose Jupiter-8V2.
+On a Macintosh, open the folder /Applications/Arturia Jupiter-8V2/ and double click on
+the application icon Jupiter-8V2.
+You can also double-click on a previously saved document in order to open the
+corresponding configuration of the Jupiter-8V2 application.
+10.1.2Preference Configuration
+In order to access the preferences window, click on the “Settings” button. This window
+allows you to configure the global preferences of the Jupiter-8V application. These are
+saved automatically.
+116 ARTURIA – JUPITER-8V – USER’S MANUAL
+The preferences window on Windows
+• Audio device type: (Windows only): select the audio protocol that you wish to
+use. The ASIO driver offers some increased performance in relation to the Direct X
+drivers.
+• Device: here, select the driver corresponding to the sound menu that you wish to
+use.
+• Sample rate: here, choose the sampling frequency among those offered in your
+sound menu. Note that a high sampling frequency will demand increased
+processor performance on your computer.
+• Audio buffer size: here, you can configure the optimal audio latency as it relates
+to performance of your sound card. Be careful with this setting, as a latency
+setting that is lower than your system can support can cause unwanted artefacts
+in the sound.
+• Show this device’s… (on Windows only with ASIO protocol): this button opens
+your audio card's configuration panel, if it is available.
+10.2 USING A VST AND AUDIO UNIT INSTRUMENT IN ABLETON LIVE
+From the plug-ins tab, simply drag-and-drop the plug-in into a MIDI track.
+ARTURIA – JUPITER-8V – USER’S MANUAL 117
+Using Audio Unit and VST Instrument in Live
+ If necessary, you can perform a rescan of the plug-in directory in Preferences, “File Folder” tab, button
+”Scan” or button “Scan” and hold “Alt” for a full rescan.
+10.3 RTAS - PRO TOOLS
+10.3.1Utilization of the plug-in
+• Opening of the plug-in
+Access to the Jupiter-8V plug-in is like all other plug-ins, via an audio track insert:
+118 ARTURIA – JUPITER-8V – USER’S MANUAL
+Opening the Jupiter-8V in Pro Tools
+Jupiter-8V must be loaded on an audio stereo track. We can now make Jupiter-8V sounds
+by playing with the mouse on the virtual keyboard.
+10.3.2Connection to a MIDI channel
+To enable the Jupiter-8V to play the information coming from a MIDI track, you have to
+associate it to a MIDI channel via the appropriate menu. (See the Pro Tools menu for
+more information on plug-in connection).
+ARTURIA – JUPITER-8V – USER’S MANUAL 119
+Connecting a MIDI track to Jupiter-8V
+10.3.3Saving the presets
+When the session is saved, the status of Jupiter-8V 2.5 is saved as it is, even if its
+programming does not correspond to the preset. For example, if you are working on a
+preset “P1” in which you have modified the parameters (without saving them in the plugin itself), the next time you open the session, Jupiter-8V will charge the “P1” preset plus
+the modifications.
+The “Librarian Menu” of Pro Tools can be used with Jupiter-8V 2.5 like with all other plugins. Nevertheless it is highly recommended to use the internal Jupiter-8V 2.5 menu: with
+the presets saved like this, they are usable no matter which mode is chosen (standalone
+or other sequencer), and they can be exported, exchanged more easily, and will stay
+compatible with future versions of Jupiter-8V 2.5.
+10.3.4Automation under Pro Tools
+The automation function with Jupiter-8V functions like with all RTAS/HTDM plug-ins
+(check the Pro Tools documentation for more details on plug-in automations).
+120 ARTURIA – JUPITER-8V – USER’S MANUAL
+10.4 CUBASE VST
+10.4.1Instrument use in VST mode
+The opening of VST Jupiter-8V plug-in is the same as opening all other VST plug-ins.
+Please consult the instruction manual of your host sequencer for more specific
+information. Under Cubase, open the menu / VST Instruments, and choose Jupiter-8V2 in
+the rack.
+Using Jupiter-8V as VST instrument in Cubase
+10.4.2Rescan the plug-ins directory in Cubase
+If the Jupiter-8V2 does not appear in the list of VST plug-ins, you can perform a “rescan”
+of the plug-ins directory:
+Re-scan of the Plug-ins directory in Cubase
+ARTURIA – JUPITER-8V – USER’S MANUAL 121
+10.4.3Connection to a MIDI track
+In order for the Jupiter-8V to play information coming from a MIDI track, you have to
+choose a MIDI track and select Jupiter-8V as MIDI output of this track. See the picture
+below for more details on how this is accomplished.
+Cubase asks you directly if you wish to create a midi track for the new inserted VSTi.
+The events played on a MIDI keyboard are recorded by your host sequencer, and now
+you can use the MIDI editing possibilities of the sequencer to control any parameter with
+Jupiter-8V 2.5.
+10.4.4Saving of presets
+When the session/project is saved, Jupiter-8V is saved in its last mode of operation, with
+all modifications intact. For instance, if you were working on a “P1” preset in which you
+have modified parameters (without saving them as a separate voice in the plug-in itself),
+at the next opening of the piece, Jupiter-8V will load the “P1” preset and the
+modifications.
+The drop-down menu in which the VST sequencer allows you to save a new preset is of
+course usable with Jupiter-8V 2.5. However, it is highly advised to use the Jupiter-8V 2.5
+internal menu: the presets saved in this way are usable in any other mode (standalone
+or other sequencer), they can be exported and exchanged more easily, and they will
+remain compatible with the future Jupiter-8V 2.5 versions.
+10.5 LOGIC & AUDIO UNIT (MAX OSX ONLY)
+10.5.1Use in Logic Audio
+Select an instrument track. On the channel of the mixer corresponding to the selected
+track, click on the button “I/O” to obtain the list of plug-ins, then select “Stereo > AU
+Instruments > Arturia Jupiter-8V2”.
+122 ARTURIA – JUPITER-8V – USER’S MANUAL
+Jupiter-8 V opening in Logic
+Since version 7, there has been an Audio Unit plug-in manager in Logic. To launch it,
+click on the menu “Preferences > Start Logic AU Manager”
+Launching of the Audio Unit manager of Logic
+This Manager allows us to see the list of the available plug-ins, to test their compatibility
+with Logic, and to activate or de-activate them.
+If it happens that one of the Arturia plug-ins poses a problem in Logic, start by checking
+that this plug-in has passed the compatibility test, and that it is actually selected for use.
+ARTURIA – JUPITER-8V – USER’S MANUAL 123
+10.6 SONAR VST (WINDOWS ONLY)
+Jupiter-8V is compatible with the VST protocol, and thus can be used with Sonar and also
+with all other sequencers that accept the VST instruments.
+10.6.1Opening the instrument (Sonar)
+In the “Insert” menu, open the sub-menu “Soft Synth” and choose “Jupiter-8V2”.
+Opening the Jupiter-8V in Sonar
+The “Synth Rack” window will then appear. In order to make the graphic interface of
+Jupiter-8V appear, double-click on its name in the “Synth Rack” window.
+10.6.2Connection to a MIDI track
+In order for the Jupiter-8V to play the information coming from a MIDI track, choose a
+MIDI track and select Jupiter-8V as shown below:
+Connecting to a MIDI track in Jupiter-8V
+MIDI events can now play through to the Jupiter-8V virtual instrument, and can be
+recorded and edited in Sonar.
+124 ARTURIA – JUPITER-8V – USER’S MANUAL
+10.6.3Save the presets
+When the session is saved, the status of Jupiter-8V is saved as it is, even if the
+programming corresponds to none of the presets. For example, if you were working on
+the preset “P1” at which time you modified the parameters (without saving them in the
+plug-itself), the next time you opened the piece, Jupiter-8V will load the preset “P1” plus
+the modifications.
+10.6.4Automation
+Automation with Sonar functions simply by the reception and saving of MIDI Control
+Change messages. (See your Sonar documentation for more details on the plug-in
+automation).
+10.7 USE IN DIGITAL PERFORMER
+To add an instrument, choose the menu “Project > Add Track > Instrument Track >
+Jupiter-8V2”
+Inserting Jupiter-8V into an instrument track
+Once you have added this instrument, it is possible to assign a MIDI track to it. In the
+connection menu of the MIDI track, select the instrument and the MIDI channel that you
+want to use.
+ARTURIA – JUPITER-8V – USER’S MANUAL 125
+Connection from a MIDI track to Jupiter-8V
+126 ARTURIA – JUPITER-8V – USER’S MANUAL
+ARTURIA JUPITER-8V 2.5 - LICENSE AGREEMENT
+In consideration of payment of the Licensee fee, which is a portion of the price you paid,
+Arturia, as Licensor, grants to you (hereinafter termed “Licensee”) a nonexclusive right to
+use this copy of the JUPITER-8V 2.5 program (hereinafter the “SOFTWARE”).
+All intellectual property rights in the software belong to Arturia SA (hereinafter:
+“Arturia”). Arturia permits you only to copy, download, install and use the software in
+accordance with the terms and conditions of this Agreement.
+The product contains product activation for protection against unlawful copying. This
+system is known as eLicenser and permits a permanent use of the software only after the
+activation process has been totally completed. The software can be used only together
+with the eLicenser dongle (dongle) and/or the Soft-eLicenser; the OEM software can be
+used only following registration.
+Internet access is required for the activation process. The terms and conditions for use of
+the software by you, the end-user, appear below. By installing the software on your
+computer you agree to these terms and conditions. Please read the following text
+carefully in its entirety. If you do not approve these terms and conditions, you must not
+install this software. In this event give the product back to where you have purchased it
+(including all written material, the complete undamaged packing as well as the enclosed
+hardware) immediately but at the latest within 30 days in return for a refund of the
+purchase price.
+1. Software Ownership
+Arturia shall retain full and complete title to the SOFTWARE recorded on the enclosed
+disks and all subsequent copies of the SOFTWARE, regardless of the media or form on or
+in which the original disks or copies may exist. The License is not a sale of the original
+SOFTWARE.
+2. Grant of License
+• Arturia grants you a non-exclusive license for the use of the software according to the
+terms and conditions of this Agreement. You may not lease, loan or sublicense the
+software.
+• If the software is protected by the eLicenser dongle alone, you may install a license
+for the software on one or at most 3 computers which are in your possession. The
+software may be used only on one of the computers at the same time by using the
+Arturia key.
+• If the software is protected by the Soft-eLicenser (alone or together with the Arturia
+key) or has been sold to the first end user together with other software and/or
+hardware (hereinafter: “OEM software”), you may install and use a license for the
+software only on one computer which is in your possession. Purchasing a eLicenser
+dongle makes it easily possible to use the software on three computers if needs
+occur.
+• The use of the software within a network is illegal where there is the possibility of a
+contemporaneous multiple use of the program.
+• You are entitled to prepare a backup copy of the software which will not be used for
+purposes other than storage purposes.
+• You shall have no further right or interest to use the software other than the limited
+rights as specified in this Agreement. Arturia reserves all rights not expressly
+granted.
+3. Activation of the Software
+• Arturia may use a compulsory activation of the software and a compulsory
+registration of the OEM software for license control to protect the software against
+unlawful copying. If you do not accept the terms and conditions of this Agreement,
+the software will not work.
+ARTURIA – JUPITER-8V – USER’S MANUAL 127
+• In such a case the product including the software may only be returned within 30
+days following acquisition of the product. Upon return a claim according to § 11 shall
+not apply.
+4. Support, Upgrades and Updates after Product Registration
+• You can only receive support, upgrades and updates following the personal product
+registration. Support is provided only for the current version and for the previous
+version during one year after publication of the new version. Arturia can modify and
+partly or completely adjust the nature of the support (hotline, forum on the website
+etc.), upgrades and updates at any time.
+• The product registration is possible during the activation process or at any time later
+through the Internet. In such a process you are asked to agree to the storage and
+use of your personal data (name, address, contact, email-address, and license data)
+for the purposes specified above. Arturia may also forward these data to engaged
+third parties, in particular distributors, for support purposes and for the verification of
+the upgrade or update right.
+5. License module (eLicenser Key and/or Soft eLicenser)
+• Arturia uses a hardware device connected through the USB connection of a computer,
+the “eLicenser dongle” and/or a protection scheme, the “Soft eLicenser” for license
+control (hardware and/or virtual dongle). The eLicenser dongle and/or Soft eLicenser
+permanently saves the license information and regulates access to the software. If a
+eLicenser dongle is required for the use of the software, then the eLicenser dongle
+must be connected physically to the computer through the USB interface.
+• For the activation of the software, updates or upgrades of the software the computer
+which is connected to the Arturia key and/or using the Soft eLicenser or using the
+OEM software must be connected to the server of SIA eLicenser through the Internet.
+If the product was delivered with the eLicenser dongle, the license information was
+already transferred to the eLicenser dongle. If the product was delivered with a
+product card (without the eLicenser dongle), the activation codes of the enclosed
+product card must be entered manually by the user upon installation and the license
+information must be exchanged with the server of SIA eLicenser.
+• In the event of OEM software, the activation codes will be sent to an email-address
+submitted by you during a registration and must be entered manually by the user
+upon installation and the license information must be exchanged with the server of
+SIA eLicenser.
+• The reinstallation of the software - on the same or another computer - is permitted
+only in case the already installed software cannot be used any more (e.g. following
+deinstallation). If the software does not use an eLicenser dongle, the new activation
+codes may be obtained from the user’s online account for support created during the
+personal product registration. Further, the activation codes must be entered manually
+by the user upon installation and the license information must be exchanged with the
+server of SIA Steinberg. Arturia may require for the provision of further activation
+codes e.g. your proof of purchase (invoice, receipt) and a signed assurance by fax or
+letter stating your name, address and that the already installed software cannot be
+used any more.
+• You can also use another computer other than the one on which the software is to be
+installed for the activation and transfer of license data to the eLicenser dongle, if the
+software is using an eLicenser dongle. However, in such a case a corresponding
+access software (eLicenser Control Center, “eLC”) must be installed on the computer
+connected to the Internet, which is subject to a separate licensing agreement.
+6. Defect and loss of the eLicenser dongle
+• In the case of a defect or damage to the eLicenser dongle Arturia or a third party
+engaged by Arturia will check the eLicenser dongle. In the case of a legitimate
+claim the eLicenser dongle and the licenses included shall be replaced in return for
+128 ARTURIA – JUPITER-8V – USER’S MANUAL
+a handling fee. The licenses will only be replaced provided that they are licenses
+issued by Arturia. Further claims against Arturia are excluded.
+• Arturia assumes no liability or obligation if the eLicenser dongle is mislaid as a
+result of loss, theft or otherwise. Arturia reserves the right to block the licenses
+saved on the eLicenser dongle upon being notified by the registered user of the
+loss. The licenses saved on the eLicenser dongle cannot be replaced.
+7. No Unbundling
+• The software usually contains a variety of different files which in its configuration
+ensure the complete functionality of the software. The software may be used as one
+product only. It is not required that you use or install all components of the software.
+You must not arrange components of the software in a new way and develop a
+modified version of the software or a new product as a result. The configuration of
+the software may not be modified for the purpose of distribution, assignment or
+resale.
+• You may also not sell the eLicenser dongle separately as a license; the usage rights
+always remain with the software, in particular with the original software data carrier
+(e.g. CD).
+8. Assignment of Rights
+• You may assign all your rights to use the software to another person subject to the
+conditions that (a) you assign to this other person (i) this Agreement and (ii) the
+software or hardware provided with the software, packed or preinstalled thereon,
+including all copies, upgrades, updates, backup copies and previous versions, which
+granted a right to an update or upgrade on this software, (b) you do not retain
+upgrades, updates, backup copies und previous versions of this software and (c) the
+recipient accepts the terms and conditions of this Agreement as well as other
+regulations pursuant to which you acquired a valid software license.
+• A return of the product due to a failure to accept the terms and conditions of this
+Agreement, e.g. the product activation, shall not be possible following the assignment
+of rights.
+9. Upgrades and Updates
+• You must have a valid license for the previous or more inferior version of the software
+in order to be allowed to use an upgrade or update for the software. Upon
+transferring this previous or more inferior version of the software to third parties the
+right to use the upgrade or update of the software shall expire.
+• The acquisition of an upgrade or update does not in itself confer any right to use the
+software.
+• The right of support for the previous or inferior version of the software expires upon
+the installation of an upgrade or update.
+10. Limited Warranty
+Arturia warrants that the disks on which the software is furnished to be free from defects
+in materials and workmanship under normal use for a period of thirty (30) days from the
+date of purchase. Your receipt shall be evidence of the date of purchase. Any implied
+warranties on the software are limited to thirty (30) days from the date of purchase.
+Some states do not allow limitations on duration of an implied warranty, so the above
+limitation may not apply to you. All programs and accompanying materials are provided
+“as is” without warranty of any kind. The complete risk as to the quality and performance
+of the programs is with you. Should the program prove defective, you assume the entire
+cost of all necessary servicing, repair or correction.
+11. Remedies
+Arturia's entire liability and your exclusive remedy shall be at Arturia's option either (a)
+return of the purchase price or (b) replacement of the disk that does not meet the
+Limited Warranty and which is returned to Arturia with a copy of your receipt. This
+limited Warranty is void if failure of the software has resulted from accident, abuse,
+ARTURIA – JUPITER-8V – USER’S MANUAL 129
+modification, or misapplication. Any replacement software will be warranted for the
+remainder of the original warranty period or thirty (30) days, whichever is longer.
+12. No other Warranties
+The above warranties are in lieu of all other warranties, expressed or implied, including
+but not limited to, the implied warranties of merchantability and fitness for a particular
+purpose. No oral or written information or advice given by Arturia, its dealers,
+distributors, agents or employees shall create a warranty or in any way increase the
+scope of this limited warranty.
+13. No Liability for Consequential Damages
+Neither Arturia nor anyone else involved in the creation, production, or delivery of this
+product shall be liable for any direct, indirect, consequential, or incidental damages
+arising out of the use of, or inability to use this product (including without limitation,
+damages for loss of business profits, business interruption, loss of business information
+and the like) even if Arturia was previously advised of the possibility of such damages.
+Some states do not allow limitations on the length of an implied warranty or the
+exclusion or limitation of incidental or consequential damages, so the above limitation or
+exclusions may not apply to you. This warranty gives you specific legal rights, and you
+may also have other rights which vary from state to state. 
