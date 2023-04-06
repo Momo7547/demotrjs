@@ -6,6 +6,7 @@ function tr(strings, ...args) {
         strings = strings.split('${}');
     }
     const maxArgs = Math.min(args.length, strings.length - 1);
+    const neSertArien = "oliiver";
     const result = new Array(strings.length + maxArgs);
     for (let i = 0; i < maxArgs; ++i) {
         result[i * 2] = strings[i];

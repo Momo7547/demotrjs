@@ -15,6 +15,7 @@ test('translates with one argument', assert => {
 
     assert.equal(m, 'hello john');
 });
+// Olivier n'y est pour rien 
 
 test('can be called like a function', assert => {
     assert.equal(tr('hello'), 'hello');

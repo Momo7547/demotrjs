@@ -1,4 +1,5 @@
 {
   "main": "@dgayerie/tr",
-  "type": "module"
+  "type": "module",
+  "name": "olivier"
 }
