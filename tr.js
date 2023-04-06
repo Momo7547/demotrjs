@@ -16,7 +16,7 @@ function assemble(strings, args) {
 }
 
 /* Ceci est un autre commentaire */
-function addFormatter(name, formatter) {
+function addFormatterWithName(name, formatter) {
     if (name && formatter) {
         if (typeof formatter.format === 'function') {
             tr[ftSymbol].set(name, formatter.format.bind(formatter));
@@ -184,7 +184,7 @@ tr.addTranslations = function (translations) {
  */
 tr.addFormatters = function (formatters) {
     for (const name in formatters) {
-        addFormatter(name, new SafeFormatter(formatters[name]));
+        addFormatterWithName(name, formatters[name]);
     }
 }
 
@@ -199,10 +199,10 @@ tr.addFormatters = function (formatters) {
  */
 tr.load = function (config) {
     for (const k in config['numberFormats']) {
-        addFormatter(k, new SafeFormatter(new Intl.NumberFormat(config['locales'], config['numberFormats'][k])));
+        addFormatterWithName(k, new Intl.NumberFormat(config['locales'], config['numberFormats'][k]))
     }
     for (const k in config['dateTimeFormats']) {
-        addFormatter(k, new SafeFormatter(new Intl.DateTimeFormat(config['locales'], config['dateTimeFormats'][k])));
+        addFormatterWithName(k, new Intl.DateTimeFormat(config['locales'], config['dateTimeFormats'][k]))
     }
     tr.addTranslations(config['translations']);
 }
