@@ -215,6 +215,7 @@ tr.clear = function () {
     tr[ftSymbol] = new Map();
 }
 
+// be sure there is no translation
 tr.clear();
 
 export default tr;
