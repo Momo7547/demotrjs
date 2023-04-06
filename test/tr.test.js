@@ -10,6 +10,7 @@ test('translates literal words', assert => {
     tr.addTranslations({ 'hello': 'bonjour' });
 
     const m = tr`hello`;
+    const m2 = 'hello';
 
     assert.equal(m, 'bonjour');
 });
