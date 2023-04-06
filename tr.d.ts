@@ -4,6 +4,7 @@ export default tr;
  *
  * As a function, the first parameter is the template with dynamic parameters indicated by ${}.
  * The remaining parameters are the values for the dynamic parameters.
+ * changement sur branche philippe33
  * @param {(any|string[])} strings
  * @param  {...any} args
  * @returns {string} The translation

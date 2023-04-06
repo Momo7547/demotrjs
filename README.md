@@ -1,5 +1,7 @@
 # tr - A lightweight i18n library for JavaScript
 
+modificationssur la branch philippe33
+
 **tr** is a minimalistic module to handle internationalization in JavaScript.
 The module provides **tr** which can be used as a function or a tag function
 of [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals).
@@ -10,7 +12,7 @@ the expression ```${}```.
 ```javascript
 import tr from '@dgayerie/tr';
 
-const w = "world";
+const w = "world phil33";
 
 const translation = tr("Hello the ${}", w);
 ```
